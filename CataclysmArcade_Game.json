@@ -94,23 +94,33 @@
       "hideFacedDownCards": false,
       "sections": {
         "layout": {
-          "direction": "row",
+          "direction": "column",
           "isSymetricalForOpponents": false,
           "style": {
             "marginTop": "10vh"
           },
           "content": [
             {
-              "section": "Battlefield"
+              "section": "Gigs"
             },
             {
-              "section": "Boss",
-              "style": {
-                "width": "22vh"
-              }
-            },
-            {
-              "section": "Battlefield2"
+              "direction": "row",
+              "isSymetricalForOpponents": false,
+              "content": [
+                {
+                  "section": "Battlefield"
+                },
+                {
+                  "section": "Boss",
+                  "style": {
+                    "margin": "0 2vh",
+                    "width": "16vh"
+                  }
+                },
+                {
+                  "section": "Battlefield2"
+                }
+              ]
             }
           ]
         },
