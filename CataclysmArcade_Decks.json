@@ -1,1 +1,93 @@
-[]
+[
+  {
+    "title": "Mon-Sewer",
+    "id": "1f30c6d8-6da5-4c81-b3a6-a74a296cea4c",
+    "cardCount": 41,
+    "createdAt": "2026-06-15T02:29:55.413Z",
+    "lastModifiedAt": "2026-06-15T02:33:42.527Z",
+    "game": "Cataclysm Arcade",
+    "format": [
+      "Constructed"
+    ],
+    "deckList": {
+      "categoriesOrder": [
+        "Boss",
+        "Fighter",
+        "Tactic",
+        "Response"
+      ],
+      "Boss": [
+        {
+          "count": 1,
+          "id": "EB1 082"
+        }
+      ],
+      "Fighter": [
+        {
+          "count": 2,
+          "id": "EB1 060"
+        },
+        {
+          "count": 3,
+          "id": "EB1 071"
+        },
+        {
+          "count": 3,
+          "id": "EB1 093"
+        },
+        {
+          "count": 2,
+          "id": "EB1 111"
+        },
+        {
+          "count": 2,
+          "id": "EB1 085"
+        },
+        {
+          "count": 2,
+          "id": "EB1 098"
+        }
+      ],
+      "Tactic": [
+        {
+          "count": 3,
+          "id": "EB1 048"
+        },
+        {
+          "count": 3,
+          "id": "EB1 039"
+        },
+        {
+          "count": 3,
+          "id": "EB1 140"
+        },
+        {
+          "count": 3,
+          "id": "EB1 102"
+        },
+        {
+          "count": 3,
+          "id": "EB1 028"
+        },
+        {
+          "count": 2,
+          "id": "EB1 016"
+        }
+      ],
+      "Response": [
+        {
+          "count": 3,
+          "id": "EB1 014"
+        },
+        {
+          "count": 3,
+          "id": "EB1 112"
+        },
+        {
+          "count": 3,
+          "id": "EB1 118"
+        }
+      ]
+    }
+  }
+]
