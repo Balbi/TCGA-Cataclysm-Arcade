@@ -1,0 +1,142 @@
+{
+  "name": "Cataclysm Arcade",
+  "menuBackgroundImage": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/background.jpg",
+  "defaultRessources": {
+    "backgrounds": [
+      "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/playmat.webp"
+    ],
+    "decksUrl": "https://balbi.github.io/TCGA-Cataclysm-Arcade/CataclysmArcade_Decks.json"
+  },
+  "customHelp": "",
+  "cardRotation": "90",
+  "cards": {
+    "dataUrl": "https://balbi.github.io/TCGA-Cataclysm-Arcade/CataclysmArcade_Cards.json",
+    "cardBack": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/cardback.png"
+  },
+  "deckBuilding": {
+    "mainFilters": [
+      "type",
+      "Subtype",
+      "Faction",
+      "Set",
+      "Level",
+      "Health",
+      "Attack",
+      "AttackCost",
+      "WeaponLevel",
+      "WeaponWieldCost",
+      "WeaponAttackCost",
+      "Rarity"
+    ],
+    "formats": [
+      {
+        "title": "Constructed",
+        "gameplay": "Standard",
+        "deckRuleset": "Constructed",
+        "customCategories": [
+          "Boss"
+        ]
+      }
+    ],
+    "deckRulesets": {
+      "Constructed": {
+        "reversedLegality": true,
+        "general": {
+          "min": 41,
+          "maxPerCard": 3
+        },
+        "categories": [
+          {
+            "category": "Boss",
+            "min": 1,
+            "max": 1
+          }
+        ]
+      }
+    }
+  },
+  "gameplay": {
+    "Standard": {
+      "beforeGameStart": {
+        "chooseAnotherStartingPlayer": true
+      },
+      "mulligan": {
+        "triggeredByButton": true,
+        "startingHandSize": 4,
+        "mulliganCount": {
+          "min": 0,
+          "max": 1
+        },
+        "mulliganCycle": {
+          "info": "Set aside any number of cards in your initial hand, draw that many, then shuffle the set aside cards into your deck.",
+          "steps": ["toBottom", "draw", "shuffle"],
+          "selectionRange": {
+            "min": 0,
+            "max": 4
+          },
+          "keepCardsOrder": true
+        }
+      },
+      "tokens": [
+        "EB1 T01",
+        "EB1 T02",
+        "EB1 T03",
+        "EB1 T04"
+      ],
+      "countersStartingValues": [0],
+      "hideFacedDownCards": false,
+      "sections": {
+        "layout": {
+          "direction": "row",
+          "isSymetricalForOpponents": true,
+          "content": [
+            {
+              "section": "Battlefield"
+            },
+            {
+              "section": "Boss",
+              "style": {
+                "width": "22vh"
+              }
+            }
+          ]
+        },
+        "categoriesAlreadyOnBoard": [
+          "Fodder"
+        ],
+        "autoPlayFromHand": {},
+        "autoPlayFromStack": {},
+        "sectionsDict": {
+          "Boss": {
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": "true",
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false,
+            "noQuickActions": true
+          },
+          "Battlefield": {
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "noQuickActions": true,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          }
+        }
+      }
+    }
+  }
+}

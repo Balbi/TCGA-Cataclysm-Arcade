@@ -1,0 +1,5544 @@
+{
+  "DS1 023": {
+    "id": "DS1 023",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Free Vector",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/DS1_023.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Free Vector",
+    "type": "Fighter",
+    "Subtype": "Pawn",
+    "Faction": "Apex",
+    "Level": "1",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 0,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "DS1 - Demo Tape - GAMA Edition"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "DS1 030": {
+    "id": "DS1 030",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Intersentinel",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/DS1_030.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Intersentinel",
+    "type": "Fighter",
+    "Subtype": "Pawn",
+    "Faction": "Apex",
+    "Level": "3",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "DS1 - Demo Tape - GAMA Edition"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "DS1 038": {
+    "id": "DS1 038",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Mechtor Suit",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/DS1_038.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Mechtor Suit",
+    "type": "Fighter",
+    "Subtype": "Pawn",
+    "Faction": "Apex",
+    "Level": "5",
+    "Health": 5,
+    "Attack": 1,
+    "AttackCost": 0,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "DS1 - Demo Tape - GAMA Edition"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "DS1 071": {
+    "id": "DS1 071",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Vector, Victor",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/DS1_071.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Vector, Victor",
+    "type": "Fighter",
+    "Subtype": "Pawn",
+    "Faction": "Apex",
+    "Level": "3",
+    "Health": 5,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "DS1 - Demo Tape - GAMA Edition"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 001": {
+    "id": "EB1 001",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Ada, Relict Fighter",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_001.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Ada, Relict Fighter",
+    "type": "Fighter",
+    "Subtype": "Endlings",
+    "Faction": "Synth",
+    "Level": "2",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "J. Masters & A. Cramer",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 002": {
+    "id": "EB1 002",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Aha!",
+        "type": "Tactic",
+        "cost": 2,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_002.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 2,
+    "name": "Aha!",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 2,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Neon Pennington",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 003": {
+    "id": "EB1 003",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Ahna, Demodulator",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_003.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Ahna, Demodulator",
+    "type": "Fighter",
+    "Subtype": "The Defaced",
+    "Faction": "Synth",
+    "Level": "2",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 004": {
+    "id": "EB1 004",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Astuta, Signal Savant",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_004.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Astuta, Signal Savant",
+    "type": "Fighter",
+    "Subtype": "Steeplechasers",
+    "Faction": "Survivor",
+    "Level": "2",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Bobby Timony",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 005": {
+    "id": "EB1 005",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Autopilot",
+        "type": "Response",
+        "cost": 1,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_005.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 1,
+    "name": "Autopilot",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 1,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 006": {
+    "id": "EB1 006",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Axel, Deathracer",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_006.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Axel, Deathracer",
+    "type": "Fighter",
+    "Subtype": "Incarnate",
+    "Faction": "Mystic",
+    "Level": "4",
+    "Health": 4,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 007": {
+    "id": "EB1 007",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Best Offense",
+        "type": "Tactic",
+        "cost": 3,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_007.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "name": "Best Offense",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 3,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Pryce Jones",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 008": {
+    "id": "EB1 008",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Blades, Triumphant",
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_008.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Blades, Triumphant",
+    "type": "Boss",
+    "Subtype": "Warrior",
+    "Faction": "Survivor",
+    "Level": "B",
+    "Health": 16,
+    "Attack": 3,
+    "AttackCost": 3,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 009": {
+    "id": "EB1 009",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Blast Scanner",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_009.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Blast Scanner",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 4,
+    "WeaponWieldCost": 2,
+    "WeaponAttackCost": 0,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 010": {
+    "id": "EB1 010",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Bleargh, Noxious Entity",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_010.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Bleargh, Noxious Entity",
+    "type": "Fighter",
+    "Subtype": "Incarnate",
+    "Faction": "Mystic",
+    "Level": "3",
+    "Health": 3,
+    "Attack": 2,
+    "AttackCost": 0,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 011": {
+    "id": "EB1 011",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Bobby Brushbacks",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_011.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Bobby Brushbacks",
+    "type": "Fighter",
+    "Subtype": "Steeplechasers",
+    "Faction": "Survivor",
+    "Level": "2",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Bobby Timony",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 012": {
+    "id": "EB1 012",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Boom!",
+        "type": "Tactic",
+        "cost": 1,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_012.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 1,
+    "name": "Boom!",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 1,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 013": {
+    "id": "EB1 013",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Burgess, Burrower Beneath",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_013.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Burgess, Burrower Beneath",
+    "type": "Fighter",
+    "Subtype": "The Shambles",
+    "Faction": "Shifter",
+    "Level": "2",
+    "Health": 4,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Benjamin Dewey",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 014": {
+    "id": "EB1 014",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Cache Money",
+        "type": "Response",
+        "cost": 1,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_014.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 1,
+    "name": "Cache Money",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 1,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 015": {
+    "id": "EB1 015",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Calamity Blaque",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_015.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Calamity Blaque",
+    "type": "Fighter",
+    "Subtype": "The Marqued",
+    "Faction": "Synth",
+    "Level": "3",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 016": {
+    "id": "EB1 016",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Catch!",
+        "type": "Tactic",
+        "cost": 2,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_016.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 2,
+    "name": "Catch!",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 2,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 017": {
+    "id": "EB1 017",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Charlotte, Nightbringer",
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_017.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Charlotte, Nightbringer",
+    "type": "Boss",
+    "Subtype": "Spider",
+    "Faction": "Shifter",
+    "Level": "B",
+    "Health": 17,
+    "Attack": 2,
+    "AttackCost": 3,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 018": {
+    "id": "EB1 018",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Chip, Killswitch",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_018.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Chip, Killswitch",
+    "type": "Fighter",
+    "Subtype": "The Joneses",
+    "Faction": "Synth",
+    "Level": "4",
+    "Health": 3,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Z. Howard & N. Dániel",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 019": {
+    "id": "EB1 019",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Chirp, Teammate",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_019.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Chirp, Teammate",
+    "type": "Fighter",
+    "Subtype": "Heralds",
+    "Faction": "Survivor",
+    "Level": "2",
+    "Health": 2,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 020": {
+    "id": "EB1 020",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Clatter, Cornered",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_020.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Clatter, Cornered",
+    "type": "Fighter",
+    "Subtype": "The Waddle",
+    "Faction": "Shifter",
+    "Level": "1",
+    "Health": 4,
+    "Attack": 0,
+    "AttackCost": 0,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 021": {
+    "id": "EB1 021",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Clief, Ancient Eclipse",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_021.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Clief, Ancient Eclipse",
+    "type": "Fighter",
+    "Subtype": "The Boom",
+    "Faction": "Mystic",
+    "Level": "7",
+    "Health": 7,
+    "Attack": 3,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Mythic",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 022": {
+    "id": "EB1 022",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Coney, Toothfighter",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_022.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Coney, Toothfighter",
+    "type": "Fighter",
+    "Subtype": "The Waddle",
+    "Faction": "Shifter",
+    "Level": "2",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 023": {
+    "id": "EB1 023",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Constance, Fight Recruiter",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_023.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Constance, Fight Recruiter",
+    "type": "Fighter",
+    "Subtype": "Recruiter",
+    "Faction": "Survivor",
+    "Level": "5",
+    "Health": 3,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 024": {
+    "id": "EB1 024",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Darby, Straphanger",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_024.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Darby, Straphanger",
+    "type": "Fighter",
+    "Subtype": "The Shambles",
+    "Faction": "Shifter",
+    "Level": "4",
+    "Health": 4,
+    "Attack": 3,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Benjamin Dewey",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 025": {
+    "id": "EB1 025",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Data Spike",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_025.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Data Spike",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 3,
+    "WeaponWieldCost": 2,
+    "WeaponAttackCost": null,
+    "Artist": "Tim Gaedke",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 026": {
+    "id": "EB1 026",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Decisive Victory",
+        "type": "Tactic",
+        "cost": 2,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_026.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 2,
+    "name": "Decisive Victory",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 2,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 027": {
+    "id": "EB1 027",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "DeeLux, Brutal Savant",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_027.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "DeeLux, Brutal Savant",
+    "type": "Fighter",
+    "Subtype": "The Boom",
+    "Faction": "Mystic",
+    "Level": "6",
+    "Health": 6,
+    "Attack": 3,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 028": {
+    "id": "EB1 028",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Derail",
+        "type": "Tactic",
+        "cost": 5,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_028.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "name": "Derail",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 5,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Andre Garcia",
+    "Rarity": "Mythic",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 029": {
+    "id": "EB1 029",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Dette, Quickener",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_029.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Dette, Quickener",
+    "type": "Fighter",
+    "Subtype": "Odddz",
+    "Faction": "Mystic",
+    "Level": "2",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Juan Doe",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 030": {
+    "id": "EB1 030",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Diffin, Slow Hand",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_030.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Diffin, Slow Hand",
+    "type": "Fighter",
+    "Subtype": "Odddz",
+    "Faction": "Mystic",
+    "Level": "2",
+    "Health": 3,
+    "Attack": 4,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Juan Doe",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 031": {
+    "id": "EB1 031",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Dog-Eared Passage",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_031.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Dog-Eared Passage",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 4,
+    "WeaponWieldCost": 3,
+    "WeaponAttackCost": 0,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 032": {
+    "id": "EB1 032",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Don't Bury Me...",
+        "type": "Response",
+        "cost": 1,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_032.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 1,
+    "name": "Don't Bury Me...",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 1,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 033": {
+    "id": "EB1 033",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Dreyver, Terminarch",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_033.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Dreyver, Terminarch",
+    "type": "Fighter",
+    "Subtype": "Endlings",
+    "Faction": "Synth",
+    "Level": "1",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "J. Masters & A. Cramer",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 034": {
+    "id": "EB1 034",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Ebb, Balancer of Scales",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_034.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Ebb, Balancer of Scales",
+    "type": "Fighter",
+    "Subtype": "Odddz",
+    "Faction": "Mystic",
+    "Level": "2",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Juan Doe",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 035": {
+    "id": "EB1 035",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Echo Fade",
+        "type": "Response",
+        "cost": 2,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_035.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 2,
+    "name": "Echo Fade",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 2,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 036": {
+    "id": "EB1 036",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Effin' Slingshot",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_036.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Effin' Slingshot",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 3,
+    "WeaponWieldCost": 3,
+    "WeaponAttackCost": 1,
+    "Artist": "Tim Gaedke",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 037": {
+    "id": "EB1 037",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Eff with me Ammo",
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_037.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Eff with me Ammo",
+    "type": "Boss",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": "B",
+    "Health": 17,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 038": {
+    "id": "EB1 038",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Eliza, Do Little",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_038.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Eliza, Do Little",
+    "type": "Fighter",
+    "Subtype": "Odddz",
+    "Faction": "Mystic",
+    "Level": "1",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Juan Doe",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 039": {
+    "id": "EB1 039",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Emergency Brake",
+        "type": "Tactic",
+        "cost": 1,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_039.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 1,
+    "name": "Emergency Brake",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 1,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 040": {
+    "id": "EB1 040",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Evanesce",
+        "type": "Response",
+        "cost": 3,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_040.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "name": "Evanesce",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 3,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 041": {
+    "id": "EB1 041",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "EVee, The Fixer",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_041.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "EVee, The Fixer",
+    "type": "Fighter",
+    "Subtype": "Mechanic",
+    "Faction": "Survivor",
+    "Level": "1",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "ChrisCross",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 042": {
+    "id": "EB1 042",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Face of Death",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_042.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Face of Death",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 4,
+    "WeaponWieldCost": 4,
+    "WeaponAttackCost": 1,
+    "Artist": "DAF",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 043": {
+    "id": "EB1 043",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Father, Annihilator",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_043.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Father, Annihilator",
+    "type": "Fighter",
+    "Subtype": "The Joneses",
+    "Faction": "Synth",
+    "Level": "2",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Z. Howard & N. Dániel",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 044": {
+    "id": "EB1 044",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Fishhooks",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_044.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Fishhooks",
+    "type": "Fighter",
+    "Subtype": "The Marqued",
+    "Faction": "Synth",
+    "Level": "5",
+    "Health": 4,
+    "Attack": 3,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 045": {
+    "id": "EB1 045",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Flank, Packleader",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_045.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Flank, Packleader",
+    "type": "Fighter",
+    "Subtype": "Van Hooten",
+    "Faction": "Survivor",
+    "Level": "4",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 3,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "ChrisCross",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 046": {
+    "id": "EB1 046",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Flecks, Accelerator",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_046.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Flecks, Accelerator",
+    "type": "Fighter",
+    "Subtype": "Odddz",
+    "Faction": "Mystic",
+    "Level": "3",
+    "Health": 3,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Juan Doe",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 047": {
+    "id": "EB1 047",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Flipping Out",
+        "type": "Tactic",
+        "cost": 5,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_047.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "name": "Flipping Out",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 5,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Neon Pennington",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 048": {
+    "id": "EB1 048",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Fluorescent Fall",
+        "type": "Tactic",
+        "cost": 1,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_048.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 1,
+    "name": "Fluorescent Fall",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 1,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 049": {
+    "id": "EB1 049",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Full Heal!",
+        "type": "Response",
+        "cost": 3,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_049.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "name": "Full Heal!",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 3,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 050": {
+    "id": "EB1 050",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Galen, Nurturer",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_050.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Galen, Nurturer",
+    "type": "Fighter",
+    "Subtype": "The Shambles",
+    "Faction": "Shifter",
+    "Level": "5",
+    "Health": 5,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Benjamin Dewey",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 051": {
+    "id": "EB1 051",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Gates, Supportive Sensei",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_051.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Gates, Supportive Sensei",
+    "type": "Fighter",
+    "Subtype": "Odddz",
+    "Faction": "Mystic",
+    "Level": "2",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Juan Doe",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 052": {
+    "id": "EB1 052",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Gauntlet of the Dead",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_052.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Gauntlet of the Dead",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 4,
+    "WeaponWieldCost": 2,
+    "WeaponAttackCost": 0,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 053": {
+    "id": "EB1 053",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Give The Signal",
+        "type": "Tactic",
+        "cost": 5,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_053.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "name": "Give The Signal",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 5,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Andre Garcia",
+    "Rarity": "Mythic",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 054": {
+    "id": "EB1 054",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Gizzard, Persistent Pest",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_054.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Gizzard, Persistent Pest",
+    "type": "Fighter",
+    "Subtype": "The Shambles",
+    "Faction": "Shifter",
+    "Level": "3",
+    "Health": 3,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Benjamin Dewey",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 055": {
+    "id": "EB1 055",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Goodstead, Sandhog",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_055.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Goodstead, Sandhog",
+    "type": "Fighter",
+    "Subtype": "The Shambles",
+    "Faction": "Shifter",
+    "Level": "2",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Benjamin Dewey",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 056": {
+    "id": "EB1 056",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Gordo, Collector",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_056.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Gordo, Collector",
+    "type": "Fighter",
+    "Subtype": "The Waddle",
+    "Faction": "Shifter",
+    "Level": "4",
+    "Health": 4,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Neon Pennington",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 057": {
+    "id": "EB1 057",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Go to the Videotape",
+        "type": "Tactic",
+        "cost": 5,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_057.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "name": "Go to the Videotape",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 5,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Bobby Timony",
+    "Rarity": "Mythic",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 058": {
+    "id": "EB1 058",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Grammie, Picker-Upper",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_058.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Grammie, Picker-Upper",
+    "type": "Fighter",
+    "Subtype": "The Joneses",
+    "Faction": "Synth",
+    "Level": "7",
+    "Health": 7,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Z. Howard & N. Dániel",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 059": {
+    "id": "EB1 059",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Hard Knox",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_059.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Hard Knox",
+    "type": "Fighter",
+    "Subtype": "Van Hooten",
+    "Faction": "Survivor",
+    "Level": "4",
+    "Health": 2,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "ChrisCross",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 060": {
+    "id": "EB1 060",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Hot Mike, Slay-by-Slay",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_060.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Hot Mike, Slay-by-Slay",
+    "type": "Fighter",
+    "Subtype": "Announcer",
+    "Faction": "Survivor",
+    "Level": "3",
+    "Health": 4,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Fred Harper",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 061": {
+    "id": "EB1 061",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Jacked Hammer",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_061.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Jacked Hammer",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 1,
+    "WeaponWieldCost": 1,
+    "WeaponAttackCost": 1,
+    "Artist": "Tim Gaedke",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 062": {
+    "id": "EB1 062",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Joe Strummage",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_062.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Joe Strummage",
+    "type": "Fighter",
+    "Subtype": "The Waddle",
+    "Faction": "Shifter",
+    "Level": "4",
+    "Health": 4,
+    "Attack": 3,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Neon Pennington",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 063": {
+    "id": "EB1 063",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Just Elias, Protector",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_063.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Just Elias, Protector",
+    "type": "Fighter",
+    "Subtype": "Heralds",
+    "Faction": "Survivor",
+    "Level": "6",
+    "Health": 6,
+    "Attack": 2,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 064": {
+    "id": "EB1 064",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Kat Five",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_064.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Kat Five",
+    "type": "Fighter",
+    "Subtype": "[REDACTED]",
+    "Faction": "Survivor",
+    "Level": "3",
+    "Health": 4,
+    "Attack": 1,
+    "AttackCost": 3,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "ChrisCross",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 065": {
+    "id": "EB1 065",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Knap, Forgemaster",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_065.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Knap, Forgemaster",
+    "type": "Fighter",
+    "Subtype": "Odddz",
+    "Faction": "Mystic",
+    "Level": "2",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Juan Doe",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 066": {
+    "id": "EB1 066",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Kochi, Platform Presence",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_066.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Kochi, Platform Presence",
+    "type": "Fighter",
+    "Subtype": "Steeplechasers",
+    "Faction": "Survivor",
+    "Level": "6",
+    "Health": 4,
+    "Attack": 2,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Bobby Timony",
+    "Rarity": "Mythic",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 067": {
+    "id": "EB1 067",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Kupp Lightpaws",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_067.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Kupp Lightpaws",
+    "type": "Fighter",
+    "Subtype": "Time Wolf",
+    "Faction": "Shifter",
+    "Level": "1",
+    "Health": 1,
+    "Attack": 1,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Neon Pennington",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 068": {
+    "id": "EB1 068",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Lacey, Bonesaw Healer",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_068.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Lacey, Bonesaw Healer",
+    "type": "Fighter",
+    "Subtype": "Van Hooten",
+    "Faction": "Survivor",
+    "Level": "5",
+    "Health": 5,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "ChrisCross",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 069": {
+    "id": "EB1 069",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "‘Lique, Clockwork Hunter",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_069.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "‘Lique, Clockwork Hunter",
+    "type": "Fighter",
+    "Subtype": "Endlings",
+    "Faction": "Synth",
+    "Level": "4",
+    "Health": 4,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "J. Masters & A. Cramer",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 070": {
+    "id": "EB1 070",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Luna, Rage Vessel",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_070.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Luna, Rage Vessel",
+    "type": "Fighter",
+    "Subtype": "Incarnate",
+    "Faction": "Mystic",
+    "Level": "4",
+    "Health": 4,
+    "Attack": 1,
+    "AttackCost": 0,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 071": {
+    "id": "EB1 071",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Lyra, Silken Assassin",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_071.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Lyra, Silken Assassin",
+    "type": "Fighter",
+    "Subtype": "Van Hooten",
+    "Faction": "Survivor",
+    "Level": "3",
+    "Health": 3,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "ChrisCross",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 072": {
+    "id": "EB1 072",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Mahna, Soft Speaker",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_072.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Mahna, Soft Speaker",
+    "type": "Fighter",
+    "Subtype": "The Defaced",
+    "Faction": "Synth",
+    "Level": "1",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 073": {
+    "id": "EB1 073",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Makeshift Shield",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_073.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Makeshift Shield",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 4,
+    "WeaponWieldCost": 2,
+    "WeaponAttackCost": 0,
+    "Artist": "Christopher Lee Zammit",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 074": {
+    "id": "EB1 074",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Malefice",
+        "type": "Tactic",
+        "cost": 3,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_074.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "name": "Malefice",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 3,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 075": {
+    "id": "EB1 075",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Marrowpiercer",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_075.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Marrowpiercer",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 3,
+    "WeaponWieldCost": 3,
+    "WeaponAttackCost": 0,
+    "Artist": "DAF",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 076": {
+    "id": "EB1 076",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Max, Homicide King",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_076.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Max, Homicide King",
+    "type": "Fighter",
+    "Subtype": "The Marqued",
+    "Faction": "Synth",
+    "Level": "6",
+    "Health": 5,
+    "Attack": 4,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 077": {
+    "id": "EB1 077",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Mayhem Fist",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_077.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Mayhem Fist",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 2,
+    "WeaponWieldCost": 2,
+    "WeaponAttackCost": null,
+    "Artist": "Tim Gaedke",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 078": {
+    "id": "EB1 078",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Mimeoscoped",
+        "type": "Tactic",
+        "cost": 3,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_078.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "name": "Mimeoscoped",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 3,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Christopher Lee Zammit",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 079": {
+    "id": "EB1 079",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Minka, Underestimated",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_079.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Minka, Underestimated",
+    "type": "Fighter",
+    "Subtype": "The Waddle",
+    "Faction": "Shifter",
+    "Level": "6",
+    "Health": 5,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Neon Pennington",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 080": {
+    "id": "EB1 080",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Mister Purple",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_080.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Mister Purple",
+    "type": "Fighter",
+    "Subtype": "Van Hooten",
+    "Faction": "Survivor",
+    "Level": "6",
+    "Health": 5,
+    "Attack": 3,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "ChrisCross",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 081": {
+    "id": "EB1 081",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Mist Me",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_081.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Mist Me",
+    "type": "Fighter",
+    "Subtype": "Incarnate",
+    "Faction": "Mystic",
+    "Level": "2",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 082": {
+    "id": "EB1 082",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Mon-Sewer Mayhem",
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_082.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Mon-Sewer Mayhem",
+    "type": "Boss",
+    "Subtype": "Berserker",
+    "Faction": "Survivor",
+    "Level": "B",
+    "Health": 18,
+    "Attack": null,
+    "AttackCost": 4,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 083": {
+    "id": "EB1 083",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Mother May Eye",
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_083.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Mother May Eye",
+    "type": "Boss",
+    "Subtype": "Tracker",
+    "Faction": "Mystic",
+    "Level": "B",
+    "Health": 16,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 084": {
+    "id": "EB1 084",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Motreina, Stepmonster",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_084.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Motreina, Stepmonster",
+    "type": "Fighter",
+    "Subtype": "The Joneses",
+    "Faction": "Synth",
+    "Level": "2",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Z. Howard & N. Dániel",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 085": {
+    "id": "EB1 085",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Muck, Relentless Foe",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_085.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Muck, Relentless Foe",
+    "type": "Fighter",
+    "Subtype": "The Waddle",
+    "Faction": "Shifter",
+    "Level": "6",
+    "Health": 6,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Neon Pennington",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 086": {
+    "id": "EB1 086",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Mumbly Peg",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_086.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Mumbly Peg",
+    "type": "Fighter",
+    "Subtype": "The Waddle",
+    "Faction": "Shifter",
+    "Level": "4",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 087": {
+    "id": "EB1 087",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Murder Countess",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_087.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Murder Countess",
+    "type": "Fighter",
+    "Subtype": "The Shambles",
+    "Faction": "Shifter",
+    "Level": "1",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Benjamin Dewey",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 088": {
+    "id": "EB1 088",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Murkgod Pendant",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_088.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Murkgod Pendant",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 2,
+    "WeaponWieldCost": 0,
+    "WeaponAttackCost": 0,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 089": {
+    "id": "EB1 089",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Mystery Meat",
+        "type": "Response",
+        "cost": 2,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_089.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 2,
+    "name": "Mystery Meat",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 2,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 090": {
+    "id": "EB1 090",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Night Vision",
+        "type": "Tactic",
+        "cost": 1,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_090.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 1,
+    "name": "Night Vision",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 1,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 091": {
+    "id": "EB1 091",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Notamotua, Deathpunch",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_091.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Notamotua, Deathpunch",
+    "type": "Fighter",
+    "Subtype": "Endlings",
+    "Faction": "Synth",
+    "Level": "6",
+    "Health": 4,
+    "Attack": 2,
+    "AttackCost": 3,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "J. Masters & A. Cramer",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 092": {
+    "id": "EB1 092",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Oriana, Cutthroat",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_092.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Oriana, Cutthroat",
+    "type": "Fighter",
+    "Subtype": "The Waddle",
+    "Faction": "Shifter",
+    "Level": "1",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Neon Pennington",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 093": {
+    "id": "EB1 093",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Orson, Quickstinger",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_093.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Orson, Quickstinger",
+    "type": "Fighter",
+    "Subtype": "The Shambles",
+    "Faction": "Shifter",
+    "Level": "4",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 094": {
+    "id": "EB1 094",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Outlast",
+        "type": "Tactic",
+        "cost": 3,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_094.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "name": "Outlast",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 3,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 095": {
+    "id": "EB1 095",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Phern, Battle Ready",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_095.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Phern, Battle Ready",
+    "type": "Fighter",
+    "Subtype": "The Shambles",
+    "Faction": "Shifter",
+    "Level": "2",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 096": {
+    "id": "EB1 096",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Pia, Laser Focused",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_096.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Pia, Laser Focused",
+    "type": "Fighter",
+    "Subtype": "The Defaced",
+    "Faction": "Synth",
+    "Level": "4",
+    "Health": 4,
+    "Attack": 4,
+    "AttackCost": 3,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 097": {
+    "id": "EB1 097",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Piecebook, Living Legend",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_097.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Piecebook, Living Legend",
+    "type": "Fighter",
+    "Subtype": "Artist",
+    "Faction": "Survivor",
+    "Level": "3",
+    "Health": 3,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 098": {
+    "id": "EB1 098",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Pilskin, Slithering Striker",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_098.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Pilskin, Slithering Striker",
+    "type": "Fighter",
+    "Subtype": "The Waddle",
+    "Faction": "Shifter",
+    "Level": "6",
+    "Health": 5,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Neon Pennington",
+    "Rarity": "Mythic",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 099": {
+    "id": "EB1 099",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Poof, Worst Enemy",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_099.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Poof, Worst Enemy",
+    "type": "Fighter",
+    "Subtype": "The Defaced",
+    "Faction": "Synth",
+    "Level": "5",
+    "Health": 5,
+    "Attack": 1,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 100": {
+    "id": "EB1 100",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Power Play",
+        "type": "Tactic",
+        "cost": 1,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_100.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 1,
+    "name": "Power Play",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 1,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 101": {
+    "id": "EB1 101",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "ProX",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_101.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "ProX",
+    "type": "Fighter",
+    "Subtype": "The Marqued",
+    "Faction": "Synth",
+    "Level": "2",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 0,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 102": {
+    "id": "EB1 102",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Push",
+        "type": "Tactic",
+        "cost": 3,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_102.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "name": "Push",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 3,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 103": {
+    "id": "EB1 103",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Quarters",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_103.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Quarters",
+    "type": "Fighter",
+    "Subtype": "The Marqued",
+    "Faction": "Synth",
+    "Level": "2",
+    "Health": 2,
+    "Attack": 2,
+    "AttackCost": 0,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 104": {
+    "id": "EB1 104",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Rally Up",
+        "type": "Response",
+        "cost": 2,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_104.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 2,
+    "name": "Rally Up",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 2,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 105": {
+    "id": "EB1 105",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "RATS!",
+        "type": "Response",
+        "cost": 2,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_105.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 2,
+    "name": "RATS!",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 2,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 106": {
+    "id": "EB1 106",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Reika, First Novice",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_106.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Reika, First Novice",
+    "type": "Fighter",
+    "Subtype": "The Boom",
+    "Faction": "Mystic",
+    "Level": "3",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 0,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 107": {
+    "id": "EB1 107",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Roll Call",
+        "type": "Tactic",
+        "cost": 5,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_107.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "name": "Roll Call",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 5,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Andre Garcia",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 108": {
+    "id": "EB1 108",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Rope-a-Dope",
+        "type": "Response",
+        "cost": 3,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_108.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "name": "Rope-a-Dope",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 3,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Pryce Jones",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 109": {
+    "id": "EB1 109",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Ryle, Unchecked",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_109.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Ryle, Unchecked",
+    "type": "Fighter",
+    "Subtype": "The Shambles",
+    "Faction": "Shifter",
+    "Level": "3",
+    "Health": 4,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 110": {
+    "id": "EB1 110",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Sage, Fair Fighter",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_110.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Sage, Fair Fighter",
+    "type": "Fighter",
+    "Subtype": "Odddz",
+    "Faction": "Mystic",
+    "Level": "5",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Juan Doe",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 111": {
+    "id": "EB1 111",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Sanyang, Unerring",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_111.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Sanyang, Unerring",
+    "type": "Fighter",
+    "Subtype": "[REDACTED]",
+    "Faction": "Survivor",
+    "Level": "4",
+    "Health": 4,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "ChrisCross",
+    "Rarity": "Mythic",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 112": {
+    "id": "EB1 112",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Scrap Shield",
+        "type": "Response",
+        "cost": 1,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_112.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 1,
+    "name": "Scrap Shield",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 1,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 113": {
+    "id": "EB1 113",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Screech!",
+        "type": "Tactic",
+        "cost": 2,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_113.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 2,
+    "name": "Screech!",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 2,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 114": {
+    "id": "EB1 114",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Seeya, Later Gator",
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_114.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Seeya, Later Gator",
+    "type": "Boss",
+    "Subtype": "Warrior",
+    "Faction": "Shifter",
+    "Level": "B",
+    "Health": 16,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 115": {
+    "id": "EB1 115",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Shadowcaster",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_115.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Shadowcaster",
+    "type": "Fighter",
+    "Subtype": "Artist",
+    "Faction": "Mystic",
+    "Level": "1",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 116": {
+    "id": "EB1 116",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Shadowstriker",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_116.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Shadowstriker",
+    "type": "Fighter",
+    "Subtype": "Incarnate",
+    "Faction": "Mystic",
+    "Level": "5",
+    "Health": 5,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 117": {
+    "id": "EB1 117",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Shaman of Eternity",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_117.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Shaman of Eternity",
+    "type": "Fighter",
+    "Subtype": "The Boom",
+    "Faction": "Mystic",
+    "Level": "3",
+    "Health": 3,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 118": {
+    "id": "EB1 118",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Sharp Reflexes",
+        "type": "Response",
+        "cost": 2,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_118.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 2,
+    "name": "Sharp Reflexes",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 2,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 119": {
+    "id": "EB1 119",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Shiner, The Unruly",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_119.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Shiner, The Unruly",
+    "type": "Fighter",
+    "Subtype": "The Joneses",
+    "Faction": "Synth",
+    "Level": "3",
+    "Health": 3,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Z. Howard & N. Dániel",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 120": {
+    "id": "EB1 120",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Signal Jam",
+        "type": "Response",
+        "cost": 2,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_120.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 2,
+    "name": "Signal Jam",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 2,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 121": {
+    "id": "EB1 121",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Skell, Nimble Adversary",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_121.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Skell, Nimble Adversary",
+    "type": "Fighter",
+    "Subtype": "Heralds",
+    "Faction": "Survivor",
+    "Level": "1",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 0,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 122": {
+    "id": "EB1 122",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Sky Axe, Restored",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_122.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Sky Axe, Restored",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 3,
+    "WeaponWieldCost": 2,
+    "WeaponAttackCost": 2,
+    "Artist": "Tim Gaedke",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 123": {
+    "id": "EB1 123",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Sky, Unlikely Champion",
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_123.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Sky, Unlikely Champion",
+    "type": "Boss",
+    "Subtype": "Warrior",
+    "Faction": "Survivor",
+    "Level": "B",
+    "Health": 17,
+    "Attack": 2,
+    "AttackCost": 3,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 124": {
+    "id": "EB1 124",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Slider, Untombed",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_124.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Slider, Untombed",
+    "type": "Fighter",
+    "Subtype": "Time Wolf",
+    "Faction": "Shifter",
+    "Level": "5",
+    "Health": 5,
+    "Attack": null,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 125": {
+    "id": "EB1 125",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Sludged",
+        "type": "Response",
+        "cost": 3,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_125.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "name": "Sludged",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 3,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 126": {
+    "id": "EB1 126",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Spot, Weaponhound",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_126.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Spot, Weaponhound",
+    "type": "Fighter",
+    "Subtype": "The Joneses",
+    "Faction": "Synth",
+    "Level": "2",
+    "Health": 2,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Z. Howard & N. Dániel",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 127": {
+    "id": "EB1 127",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Squatch, Fearsome Slugger",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_127.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Squatch, Fearsome Slugger",
+    "type": "Fighter",
+    "Subtype": "Steeplechasers",
+    "Faction": "Survivor",
+    "Level": "1",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Bobby Timony",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 128": {
+    "id": "EB1 128",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Stat, Mirage Master",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_128.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Stat, Mirage Master",
+    "type": "Fighter",
+    "Subtype": "The Boom",
+    "Faction": "Mystic",
+    "Level": "4",
+    "Health": 0,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 129": {
+    "id": "EB1 129",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Stay Hydrated",
+        "type": "Response",
+        "cost": 1,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_129.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 1,
+    "name": "Stay Hydrated",
+    "type": "Response",
+    "Subtype": null,
+    "Faction": "Survivor",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 1,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 130": {
+    "id": "EB1 130",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Steel Swipe",
+        "type": "Tactic",
+        "cost": 2,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_130.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 2,
+    "name": "Steel Swipe",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 2,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 131": {
+    "id": "EB1 131",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Swiftpack",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_131.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Swiftpack",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 3,
+    "WeaponWieldCost": 2,
+    "WeaponAttackCost": 0,
+    "Artist": "Tim Gaedke",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 132": {
+    "id": "EB1 132",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Swiftpack 1999",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_132.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Swiftpack 1999",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Synth",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 6,
+    "WeaponWieldCost": 3,
+    "WeaponAttackCost": 2,
+    "Artist": "Tim Gaedke",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 133": {
+    "id": "EB1 133",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Sword from Nowhere",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_133.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Sword from Nowhere",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 6,
+    "WeaponWieldCost": 2,
+    "WeaponAttackCost": null,
+    "Artist": "Juan Doe",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 134": {
+    "id": "EB1 134",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Tantrum, World Ender",
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_134.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Tantrum, World Ender",
+    "type": "Boss",
+    "Subtype": "Illusionist",
+    "Faction": "Mystic",
+    "Level": "B",
+    "Health": 16,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 135": {
+    "id": "EB1 135",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "The Blue Gelati",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_135.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "The Blue Gelati",
+    "type": "Fighter",
+    "Subtype": "Endlings",
+    "Faction": "Synth",
+    "Level": "3",
+    "Health": 4,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "J. Masters & A. Cramer",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 136": {
+    "id": "EB1 136",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "The Decommissioner",
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_136.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "The Decommissioner",
+    "type": "Boss",
+    "Subtype": "Champion",
+    "Faction": "Synth",
+    "Level": "B",
+    "Health": 17,
+    "Attack": 2,
+    "AttackCost": 3,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 137": {
+    "id": "EB1 137",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Theurgic Thrashing",
+        "type": "Tactic",
+        "cost": 3,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_137.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "name": "Theurgic Thrashing",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 3,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 138": {
+    "id": "EB1 138",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Toolshed",
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_138.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Toolshed",
+    "type": "Boss",
+    "Subtype": "Weaponsmith",
+    "Faction": "Synth",
+    "Level": "B",
+    "Health": 17,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 139": {
+    "id": "EB1 139",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Tooth Extraction",
+        "type": "Tactic",
+        "cost": 4,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_139.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 4,
+    "name": "Tooth Extraction",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 4,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Pryce Jones",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 140": {
+    "id": "EB1 140",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Tracker's Frenzy",
+        "type": "Tactic",
+        "cost": 1,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_140.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 1,
+    "name": "Tracker's Frenzy",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 1,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 141": {
+    "id": "EB1 141",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Trapper, Hunter of the Pack",
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_141.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Trapper, Hunter of the Pack",
+    "type": "Boss",
+    "Subtype": "Hunter",
+    "Faction": "Synth",
+    "Level": "B",
+    "Health": 16,
+    "Attack": 3,
+    "AttackCost": 3,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 142": {
+    "id": "EB1 142",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Trouble, Forerunner",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_142.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Trouble, Forerunner",
+    "type": "Fighter",
+    "Subtype": "[REDACTED]",
+    "Faction": "Survivor",
+    "Level": "3",
+    "Health": 4,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "ChrisCross",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 143": {
+    "id": "EB1 143",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Tryp, Timelost",
+        "type": "Boss",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_143.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Tryp, Timelost",
+    "type": "Boss",
+    "Subtype": "Time Wolf",
+    "Faction": "Shifter",
+    "Level": "B",
+    "Health": 17,
+    "Attack": 2,
+    "AttackCost": 3,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 144": {
+    "id": "EB1 144",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Tube Steak",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_144.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Tube Steak",
+    "type": "Fighter",
+    "Subtype": "Announcer",
+    "Faction": "Synth",
+    "Level": "1",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Fred Harper",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 145": {
+    "id": "EB1 145",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Turner, Straphanger",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_145.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Turner, Straphanger",
+    "type": "Fighter",
+    "Subtype": "Van Hooten",
+    "Faction": "Survivor",
+    "Level": "1",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "ChrisCross",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 146": {
+    "id": "EB1 146",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Tyro, Sensei's Pet",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_146.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Tyro, Sensei's Pet",
+    "type": "Fighter",
+    "Subtype": "Odddz",
+    "Faction": "Mystic",
+    "Level": "3",
+    "Health": 3,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Juan Doe",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 147": {
+    "id": "EB1 147",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Undertowed",
+        "type": "Tactic",
+        "cost": 3,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_147.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "name": "Undertowed",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Shifter",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 3,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Neon Pennington",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 148": {
+    "id": "EB1 148",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Vengeance de Milo",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_148.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Vengeance de Milo",
+    "type": "Fighter",
+    "Subtype": "Endlings",
+    "Faction": "Synth",
+    "Level": "4",
+    "Health": 3,
+    "Attack": 2,
+    "AttackCost": 2,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "J. Masters & A. Cramer",
+    "Rarity": "Uncommon",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 149": {
+    "id": "EB1 149",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Vermingus, Brutal Busker",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_149.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Vermingus, Brutal Busker",
+    "type": "Fighter",
+    "Subtype": "The Shambles",
+    "Faction": "Shifter",
+    "Level": "2",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 150": {
+    "id": "EB1 150",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Vigo the Sharp",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_150.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Vigo the Sharp",
+    "type": "Fighter",
+    "Subtype": "The Waddle",
+    "Faction": "Shifter",
+    "Level": "3",
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Neon Pennington",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 151": {
+    "id": "EB1 151",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Voltage Snap",
+        "type": "Tactic",
+        "cost": 1,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_151.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 1,
+    "name": "Voltage Snap",
+    "type": "Tactic",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": 1,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 152": {
+    "id": "EB1 152",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Whiskers of the Ancient",
+        "type": "Weapon",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_152.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Whiskers of the Ancient",
+    "type": "Weapon",
+    "Subtype": null,
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": null,
+    "Attack": null,
+    "AttackCost": null,
+    "TokenCost": null,
+    "WeaponLevel": 2,
+    "WeaponWieldCost": 2,
+    "WeaponAttackCost": null,
+    "Artist": "Samuel Alexander",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 153": {
+    "id": "EB1 153",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "WillyB, Newcomer",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_153.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "WillyB, Newcomer",
+    "type": "Fighter",
+    "Subtype": "Heralds",
+    "Faction": "Survivor",
+    "Level": "5",
+    "Health": 5,
+    "Attack": 2,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "DAF",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 154": {
+    "id": "EB1 154",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Yoshi, Victory at all Cost",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_154.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Yoshi, Victory at all Cost",
+    "type": "Fighter",
+    "Subtype": "The Boom",
+    "Faction": "Mystic",
+    "Level": "1",
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Steve Ellis",
+    "Rarity": "Rare",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 155": {
+    "id": "EB1 155",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Zanni, Nobody's Fool",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_155.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Zanni, Nobody's Fool",
+    "type": "Fighter",
+    "Subtype": "Van Hooten",
+    "Faction": "Survivor",
+    "Level": "1",
+    "Health": 1,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "ChrisCross",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 T01": {
+    "id": "EB1 T01",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Bear Trap",
+        "type": "Token",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_T01.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Bear Trap",
+    "type": "Token",
+    "Subtype": "Fighter",
+    "Faction": "Synth",
+    "Level": null,
+    "Health": 1,
+    "Attack": 0,
+    "AttackCost": 0,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 T02": {
+    "id": "EB1 T02",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Head Rat",
+        "type": "Token",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_T02.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Head Rat",
+    "type": "Token",
+    "Subtype": "Rat",
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": 2,
+    "Attack": 1,
+    "AttackCost": 0,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 T03": {
+    "id": "EB1 T03",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Toolbox",
+        "type": "Token",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_T03.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Toolbox",
+    "type": "Token",
+    "Subtype": "Fighter",
+    "Faction": "Synth",
+    "Level": null,
+    "Health": 3,
+    "Attack": 1,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  },
+  "EB1 T04": {
+    "id": "EB1 T04",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Whump!",
+        "type": "Token",
+        "cost": 0,
+        "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/cards/EB1_T04.webp",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "name": "Whump!",
+    "type": "Token",
+    "Subtype": "Fighter",
+    "Faction": "Mystic",
+    "Level": null,
+    "Health": 4,
+    "Attack": 3,
+    "AttackCost": 1,
+    "TokenCost": null,
+    "WeaponLevel": null,
+    "WeaponWieldCost": null,
+    "WeaponAttackCost": null,
+    "Artist": "Adriano Kitani",
+    "Rarity": "Common",
+    "Set": [
+      "EB1 - Early Bird"
+    ],
+    "_legal": [
+      "Standard"
+    ]
+  }
+}
