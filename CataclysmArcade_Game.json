@@ -87,12 +87,7 @@
         "firstPlayerTokenName": "",
         "drawPerTurn": "0"
       },
-      "tokens": [
-        "EB1 T01",
-        "EB1 T02",
-        "EB1 T03",
-        "EB1 T04"
-      ],
+      "tokens": [],
       "countersStartingValues": [
         0
       ],
@@ -100,7 +95,10 @@
       "sections": {
         "layout": {
           "direction": "row",
-          "isSymetricalForOpponents": true,
+          "isSymetricalForOpponents": false,
+          "style": {
+            "marginTop": "10vh"
+          },
           "content": [
             {
               "section": "Battlefield"
@@ -110,6 +108,9 @@
               "style": {
                 "width": "22vh"
               }
+            },
+            {
+              "section": "Battlefield2"
             }
           ]
         },
@@ -139,7 +140,21 @@
             "alignment": "CENTER",
             "opponentAlignment": false,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
+            "isHorizontalAllowed": false,
+            "noQuickActions": true,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Battlefield2": {
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
             "noQuickActions": true,
             "enterTapped": false,
             "enterSpun": false,
