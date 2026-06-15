@@ -69,7 +69,11 @@
         },
         "mulliganCycle": {
           "info": "Set aside any number of cards in your initial hand, draw that many, then shuffle the set aside cards into your deck.",
-          "steps": ["toBottom", "draw", "shuffle"],
+          "steps": [
+            "toBottom",
+            "draw",
+            "shuffle"
+          ],
           "selectionRange": {
             "min": 0,
             "max": 4
@@ -77,13 +81,21 @@
           "keepCardsOrder": true
         }
       },
+      "newTurn": {
+        "drawOnStart": false,
+        "sharedTurn": false,
+        "firstPlayerTokenName": "",
+        "drawPerTurn": "0"
+      },
       "tokens": [
         "EB1 T01",
         "EB1 T02",
         "EB1 T03",
         "EB1 T04"
       ],
-      "countersStartingValues": [0],
+      "countersStartingValues": [
+        0
+      ],
       "hideFacedDownCards": false,
       "sections": {
         "layout": {
