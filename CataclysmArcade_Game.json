@@ -204,7 +204,7 @@
                     "children": [
                       {
                         "type": "div",
-                        "children": "Player {{ index + 1 }}"
+                        "children": "Player {{ item.index + 1 }}"
                       },
                       {
                         "type": "div",
@@ -247,7 +247,7 @@
               "players": []
             },
             "events": {
-              "onStart": "console.log('Scoreboard: onStart'); if(game.data.Scoreboard.players.length == 0){for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i] = { tokens: 0, health: 0, passed: false };};}; console.log(game);",
+              "onStart": "console.log('Scoreboard: onStart'); if(game.data.Scoreboard.players.length == 0){for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i] = { tokens: 0, health: 0, passed: false, index: i };};}; console.log(game);",
               "onNewTurn": "console.log('Scoreboard: onNewTurn'); game.data.Scoreboard.level = Math.min(game.data.Scoreboard.level + 1, 9); game.data.Scoreboard.turnPlayerIndex = (game.data.Scoreboard.turnPlayerIndex + 1) % game.turn.totalPlayers; for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i].tokens = game.data.Scoreboard.level; game.data.Scoreboard.players[i].passed = false;}; game.data.Controls.tokens = game.data.Scoreboard.level; console.log(game);"
             }
           },
