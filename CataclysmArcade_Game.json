@@ -184,10 +184,10 @@
               "children": [
                 {
                   "type": "img",
-                  "style": {
-                    "height": "100%"
-                  },
                   "props": {
+                    "style": {
+                      "height": "100%"
+                    },
                     "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/level_{{ game.data.Scoreboard.level }}.png"
                   }
                 },
@@ -196,19 +196,21 @@
                   "iterable": "game.data.Scoreboard.players",
                   "template": {
                     "type": "div",
-                    "style": {
-                      "height": "100%"
+                    "props": {
+                      "style": {
+                        "height": "100%"
+                      }
                     }
-                  },
-                  "style": {
-                    "height": "100%"
                   },
                   "children": [
                     {
                       "type": "img",
                       "props": {
-                        "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item.tokens }}.png"
-                      }
+                        "style": {
+                          "height": "100%"
+                        }
+                      },
+                      "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item.tokens }}.png"
                     }
                   ]
                 }
