@@ -310,7 +310,7 @@
             },
             "events": {
               "onStart": "console.log('Controls: onStart'); game.data.Controls.index = game.turn.orderPosition; console.log(game);",
-              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate'); game.data.Scoreboard.players[opponentGame.turn.orderPosition] = opponentGame.data.Controls; console.log(game);",
+              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate'); game.data.Scoreboard.players[opponentGame.turn.orderPosition] = opponentGame.data.Controls; game.data.Scoreboard.players[opponentGame.turn.orderPosition].index = opponentGame.turn.orderPosition; console.log(game);",
               "onNewTurn": ""
             }
           }
