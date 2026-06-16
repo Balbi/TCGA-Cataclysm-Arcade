@@ -274,8 +274,9 @@
             },
             "events": {
               "onStart": "console.log('Scoreboard: onStart'); console.log(game);",
+              "onUpdate": "console.log('Scoreboard: onUpdate'); console.log(game);",
               "onNewTurn": "console.log('Scoreboard: onNewTurn'); const gs = game.data.Scoreboard; gs.level = Math.min(Math.max(game.turn.count, 1), 9); const gc = game.data.Controls; gc.tokens = gs.level; gc.passed = false; for(const player of gs.players){ player.tokens = gs.level; player.passed = false; }; console.log(game);",
-              "onOpponentUpdate": "console.log('Scoreboard: onOpponentUpdate'); console.log(game, opponentGame);"
+              "onOpponentUpdate": "console.log('Scoreboard: onOpponentUpdate'); const gs = game.data.Scoreboard; const ogs = opponentGame.data.Scoreboard; if( ogs.turnPlayerIndex > gs.turnPlayerIndex){ gs.turnPlayerIndex = ogs.turnPlayerIndex; }; console.log(game, opponentGame);"
             }
           },
           "Controls": {
@@ -284,15 +285,13 @@
             "blueprint": {
               "type": "div",
               "props": {
-                "className": "controls",
-                "display": "{{ (game.data.Controls.index == game.turn.orderPosition && game.turn.count > 0 && !game.isEliminated) ? 'flex' : 'none' }}"
+                "className": "controls"
               },
               "children": [
                 {
                   "type": "div",
                   "props": {
-                    "className": "d-flex flex-column justify-content-between position-fixed end top-50 translate-middle"
-                  },
+                    "className": "d-flex flex-column justify-content-center position-fixed end-0 top-50 {{ game.data.Scoreboard.turnPlayerIndex % game.turn.totalPlayers == game.turn.orderPosition ? '' : 'disabled' }}",
                   "style": {
                     "--scoreboard-width": "6vh",
                     "--scoreboard-font-weight": "700",
@@ -300,13 +299,13 @@
                     "--scoreboard-opacity": "0.3",
                     "--scoreboard-padding": "0.7vh 0",
                     "--input-color-empty": "transparent",
-                    "height": "8vh",
-                    "width": "16vh",
+                    "height": "31.5vh",
+                    "width": "23.5vh",
                     "backdropFilter": "blur(20px)",
                     "padding": "0.5vh",
                     "backgroundColor": "#202020c9",
-                    "borderRadius": "0.5vh",
-                    "marginLeft": "var(--left-offset-centered)"
+                    "borderRadius": "0.5vh"
+                  }
                   },
                   "children": [
                     {
@@ -334,6 +333,14 @@
                       },
                       "children": "Pass",
                       "onClick": "game.data.Controls.passed = true; game.data.Scoreboard.players[game.turn.orderPosition].passed = true; chatLog('has passed.')"
+                    },
+                    {
+                      "type": "button",
+                      "props":{
+                        "className": "{{ game.data.Controls.passed ? 'disabled ' : '' }}"
+                      },
+                      "children": "Next",
+                      "onClick": "game.data.Controls.passed = true; let TPI = game.data.Scoreboard.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.Scoreboard.players[TPI % game.turn.totalPlayers].passed){ game.data.Scoreboard.turnPlayerIndex = TPI; break; } TPI++; }; chatLog('has ended their action.')"
                     }
                   ]
                 }
