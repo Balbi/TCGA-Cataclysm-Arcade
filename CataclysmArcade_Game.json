@@ -291,7 +291,7 @@
                 {
                   "type": "div",
                   "props": {
-                    "className": "d-flex flex-column justify-content-center position-fixed end-0 top-50",
+                    "className": "flex-column justify-content-center position-fixed end-0 top-50",
                   "style": {
                     "--scoreboard-width": "6vh",
                     "--scoreboard-font-weight": "700",
@@ -309,6 +309,12 @@
                   }
                   },
                   "children": [
+                    {
+                      "type": "h1",
+                      "children": [
+                        "Your Turn!"
+                      ]
+                    },
                     {
                       "type": "div",
                       "children":[
