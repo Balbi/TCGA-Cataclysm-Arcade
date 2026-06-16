@@ -163,8 +163,8 @@
               "props": {
                 "className": "d-flex flex-row justify-content-between position-fixed start-50 top-50 translate-middle",
                 "style": {
-                  "--scoreboard-width": "6vh",
-                  "--scoreboard-font-weight": "700",
+                  "--scoreboard-width": "7vh",
+                  "--scoreboard-font-weight": "900",
                   "--scoreboard-font-size": "1.7vh",
                   "--scoreboard-blue": "#64bfe3",
                   "--scoreboard-red": "#d83938",
@@ -172,7 +172,6 @@
                   "--scoreboard-padding": "0.7vh 0",
                   "--input-color-empty": "transparent",
                   "height": "7vh",
-                  "width": "50vh",
                   "backdropFilter": "blur(20px)",
                   "padding": "0.5vh",
                   "backgroundColor": "#202020c9",
@@ -198,7 +197,8 @@
                     "props": {
                       "className": "d-flex flex-column justify-content-between",
                       "style": {
-                        "height": "100%"
+                        "height": "100%",
+                        "padding": "0 1vh"
                       }
                     },
                     "children": [
@@ -231,7 +231,7 @@
                               "style": {
                                 "height": "100%"
                               },
-                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ item.passed ? 'next' : 'pass' }}.png"
+                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ item.passed ? 'red' : 'green' }}.png"
                             }
                           }
                         ]
@@ -305,11 +305,12 @@
             "defaultValue": {
               "health": 0,
               "tokens": 0,
+              "index": -1,
               "passed": false
             },
             "events": {
-              "onStart": "console.log('Controls: onStart'); console.log(game);",
-              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate'); game.data.Scoreboard.players[opponentGame.turn.orderPosition] = opponentGame.data.Controls; game.data.Scoreboard.players[opponent.turn.orderPosition].index = opponent.turn.orderPosition; console.log(game);",
+              "onStart": "console.log('Controls: onStart'); game.data.Controls.index = game.turn.orderPosition; console.log(game);",
+              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate'); game.data.Scoreboard.players[opponentGame.turn.orderPosition] = opponentGame.data.Controls; console.log(game);",
               "onNewTurn": ""
             }
           }
