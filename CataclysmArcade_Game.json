@@ -204,14 +204,15 @@
                     "children": [
                       {
                         "type": "div",
-                        "children": "Item: {{ JSON.stringify(item) }}"
+                        "children": "Player {{ index + 1 }}"
                       },
                       {
                         "type": "div",
                         "props": {
                           "className": "d-flex flex-row justify-content-around",
                           "style": {
-                            "aspect-ratio": "1"
+                            "height": "3vh",
+                            "width": "7vh"
                           }
                         },
                         "children": [
