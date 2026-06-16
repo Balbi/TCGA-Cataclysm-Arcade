@@ -274,7 +274,8 @@
             },
             "events": {
               "onStart": "console.log('Scoreboard: onStart'); console.log(game);",
-              "onNewTurn": "console.log('Scoreboard: onNewTurn'); const gs = game.data.Scoreboard; gs.level = Math.min(Math.max(game.turn.count, 1), 9); const gc = game.data.Controls; gc.tokens = Math.min(Math.max(game.turn.count, 1), 9); gc.passed = false; const gp = gs.players[gc.index]; gp.tokens = gs.level; gp.passed = false; console.log(game);"
+              "onNewTurn": "console.log('Scoreboard: onNewTurn'); const gs = game.data.Scoreboard; gs.level = Math.min(Math.max(game.turn.count, 1), 9); const gc = game.data.Controls; gc.tokens = Math.min(Math.max(game.turn.count, 1), 9); gc.passed = false; const gp = gs.players[gc.index]; gp.tokens = gs.level; gp.passed = false; console.log(game);",
+              "onOpponentUpdate": "console.log('Scoreboard: onOpponentUpdate'); console.log(game);"
             }
           },
           "Controls": {
@@ -287,7 +288,6 @@
                 "display": "{{ (game.data.Controls.index == game.turn.orderPosition && game.turn.count > 0 && !game.isEliminated) ? 'flex' : 'none' }}"
               },
               "children": [
-                "{{ JSON.stringify(game) }}",
                 {
                   "type": "div",
                   "props": {
@@ -311,15 +311,21 @@
                   "children": [
                     {
                       "type": "div",
-                      "display": "Health: {{ game.data.Controls.health }}"
+                      "children":[
+                        "Health: {{ game.data.Controls.health }}"
+                      ]
                     },
                     {
                       "type": "div",
-                      "display": "Tokens: {{ game.data.Controls.tokens }}"
+                      "children": [
+                        "Tokens: {{ game.data.Controls.tokens }}"
+                      ]
                     },
                     {
                       "type": "div",
-                      "display": "Passed: {{ game.data.Controls.passed }}"
+                      "children": [
+                        "Passed: {{ game.data.Controls.passed }}"
+                      ]
                     },
                     {
                       "type": "button",
