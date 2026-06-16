@@ -188,8 +188,7 @@
               "players": []
             },
             "events": {
-              "onStart": "for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i] = { tokens: 0, health: 0, passed: false };}; console.log('GAME DATA');console.log(game);",
-              "onNewTurn": "game.data.Scoreboard.level = Math.min(game.data.Scoreboard.level + 1, 9); for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i].tokens = game.data.Scoreboard.level; game.data.Scoreboard.players[i].passed = false;}; game.data.Controls.tokens = game.data.Scoreboard.level;"
+              "onNewTurn": "if(game.data.Scoreboard.players.length == 0){for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i] = { tokens: 0, health: 0, passed: false };};}; game.data.Scoreboard.level = Math.min(game.data.Scoreboard.level + 1, 9); for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i].tokens = game.data.Scoreboard.level; game.data.Scoreboard.players[i].passed = false;}; game.data.Controls.tokens = game.data.Scoreboard.level;  console.log('GAME DATA');console.log(game);"
             },
             "children": [
               {
