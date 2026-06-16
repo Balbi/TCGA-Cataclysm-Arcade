@@ -221,7 +221,7 @@
                               "style": {
                                 "height": "100%"
                               },
-                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ console.log(item); item?.tokens }}.png"
+                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item?.tokens ?? 0 }}.png"
                             }
                           },
                           {
