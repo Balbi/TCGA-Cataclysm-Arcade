@@ -62,7 +62,7 @@
         "chooseAnotherStartingPlayer": true
       },
       "mulligan": {
-        "triggeredByButton": true,
+        "triggeredByButton": false,
         "startingHandSize": 4,
         "mulliganCount": {
           "min": 0,
@@ -107,6 +107,7 @@
             {
               "direction": "row",
               "isSymetricalForOpponents": false,
+              "alignment": "CENTER",
               "content": [
                 {
                   "section": "Boss",
@@ -194,6 +195,7 @@
             },
             "defaultValue": {
               "level": 1,
+              "turnPlayerIndex": 0,
               "tokens": [],
               "health": [],
               "passed": []
@@ -201,7 +203,26 @@
             "events": {
               "onUpdate": "",
               "onOpponentUpdate": "",
-              "onStart": "for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.tokens[i] = 0; game.data.Scoreboard.health[i] = 0; game.data.Scoreboard.passed[i] = false;}; console.log('GAME DATA');console.log(game);"
+              "onStart": "for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.tokens[i] = 0; game.data.Scoreboard.health[i] = 0; game.data.Scoreboard.passed[i] = false;}; console.log('GAME DATA');console.log(game);console.log(self)",
+              "onNewTurn": "console.log('NEW TURN');console.log(game);console.log(self)"
+            }
+          },
+          "Controls": {
+            "type": "custom",
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "className": "controls"
+              },
+              "children": []
+            },
+            "defaultValue": {
+              "health": 0,
+              "tokens": 0,
+              "passed": false
+            },
+            "events": {
+              "onOpponentUpdate": "const dc = opponentGame.data.Controls; game.data.Scoreboard.tokens[opponentGame.turn.orderPosition] = dc.tokens; game.data.Scoreboard.health[opponentGame.turn.orderPosition] = dc.health; game.data.Scoreboard.passed[opponentGame.turn.orderPosition] = dc.passed;"
             }
           }
         }
