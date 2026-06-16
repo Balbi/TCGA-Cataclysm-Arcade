@@ -194,14 +194,14 @@
             },
             "defaultValue": {
               "level": 1,
-              "tokens": [0,0,0,0],
-              "health": [0,0,0,0],
-              "passed": [false, false, false, false]
+              "tokens": [],
+              "health": [],
+              "passed": []
             },
             "events": {
               "onUpdate": "",
               "onOpponentUpdate": "",
-              "onStart": "console.log('GAME DATA');console.log(game)"
+              "onStart": "for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.tokens[i] = 0; game.data.Scoreboard.health[i] = 0; game.data.Scoreboard.passed[i] = false;}; console.log('GAME DATA');console.log(game);"
             }
           }
         }
