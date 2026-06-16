@@ -204,7 +204,11 @@
                     "children": [
                       {
                         "type": "div",
-                        "display": "Player {{ index + 1 }}"
+                        "children": "Player {{ index + 1 }}"
+                      },
+                      {
+                        "type": "div",
+                        "children": "Item: {{ JSON.stringify(item) }}"
                       },
                       {
                         "type": "div",
@@ -221,7 +225,7 @@
                               "style": {
                                 "height": "100%"
                               },
-                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item?.tokens ?? 0 }}.png"
+                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item.tokens }}.png"
                             }
                           },
                           {
@@ -230,7 +234,7 @@
                               "style": {
                                 "height": "100%"
                               },
-                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ !!item?.passed ? 'next' : 'pass' }}.png"
+                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ item.passed ? 'next' : 'pass' }}.png"
                             }
                           }
                         ]
