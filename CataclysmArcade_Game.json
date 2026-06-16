@@ -299,8 +299,8 @@
                     "--scoreboard-opacity": "0.3",
                     "--scoreboard-padding": "0.7vh 0",
                     "--input-color-empty": "transparent",
-                    "height": "31.5vh",
-                    "width": "23.5vh",
+                    "width": "31.5vh",
+                    "height": "23.5vh",
                     "backdropFilter": "blur(20px)",
                     "padding": "0.5vh",
                     "backgroundColor": "#202020c9",
@@ -339,7 +339,7 @@
                         "className": "{{ game.data.Controls.passed ? 'disabled ' : '' }}"
                       },
                       "children": "Pass",
-                      "onClick": "game.data.Controls.passed = true; game.data.Scoreboard.players[game.turn.orderPosition].passed = true; chatLog('has passed.')"
+                      "onClick": "game.data.Controls.passed = true; game.data.Scoreboard.players[game.turn.orderPosition].passed = true; let TPI = game.data.Scoreboard.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.Scoreboard.players[TPI % game.turn.totalPlayers].passed){ game.data.Scoreboard.turnPlayerIndex = TPI; break; } TPI++; }; chatLog('has passed.')"
                     },
                     {
                       "type": "button",
