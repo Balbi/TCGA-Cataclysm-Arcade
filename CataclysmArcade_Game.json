@@ -275,7 +275,7 @@
             "events": {
               "onStart": "console.log('Scoreboard: onStart'); console.log(game);",
               "onNewTurn": "console.log('Scoreboard: onNewTurn'); const gs = game.data.Scoreboard; gs.level = Math.min(Math.max(game.turn.count, 1), 9); const gc = game.data.Controls; gc.tokens = gs.level; gc.passed = false; for(const player of gs.players){ player.tokens = gs.level; player.passed = false; }; console.log(game);",
-              "onOpponentUpdate": "console.log('Scoreboard: onOpponentUpdate'); console.log(game);"
+              "onOpponentUpdate": "console.log('Scoreboard: onOpponentUpdate'); console.log(game, opponentGame);"
             }
           },
           "Controls": {
