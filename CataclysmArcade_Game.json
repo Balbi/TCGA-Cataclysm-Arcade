@@ -195,10 +195,11 @@
                   "template": {
                     "type": "div",
                     "props": {
-                      "className": "d-flex flex-column justify-content-between",
+                      "className": "flex-column justify-content-between",
                       "style": {
                         "height": "100%",
-                        "padding": "0 1vh"
+                        "padding": "0 1vh",
+                        "display": "{{ item.index < game.turn.totalPlayers ? 'flex' : 'none' }}"
                       }
                     },
                     "children": [
