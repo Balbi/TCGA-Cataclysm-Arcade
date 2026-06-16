@@ -348,7 +348,7 @@
             "events": {
               "onStart": "console.log('Controls: onStart', game); game.data.Controls.index = game.turn.orderPosition; console.log(game);",
               "onOpponentUpdate": "console.log('Controls: onOpponentUpdate', game, opponentGame); const ogc = opponentGame.data.Controls; const ogs = game.data.Scoreboard.players[opponentGame.turn.orderPosition]; ogs.health = ogc.health; ogs.tokens = ogc.tokens; ogs.passed = ogc.passed;",
-              "onNewTurn": "console.log('Controls: onNewTurn', game); console.log(game);"
+              "onNewTurn": "console.log('Controls: onNewTurn', game); Object.assign(game.data.Controls, { tokens: Math.min(Math.max(game.turn.count, 1), 9), passed: false }); console.log(game);"
             }
           }
         }
