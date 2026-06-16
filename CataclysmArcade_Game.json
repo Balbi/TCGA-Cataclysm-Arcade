@@ -188,7 +188,7 @@
               "players": []
             },
             "events": {
-              "onStart": "console.log('Scoreboard: onStart');",
+              "onStart": "console.log('Scoreboard: onStart'); if(game.data.Scoreboard.players.length == 0){for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i] = { tokens: 0, health: 0, passed: false };};};",
               "onNewTurn": "console.log('Scoreboard: onNewTurn'); game.data.Scoreboard.level = Math.min(game.data.Scoreboard.level + 1, 9); for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i].tokens = game.data.Scoreboard.level; game.data.Scoreboard.players[i].passed = false;}; game.data.Controls.tokens = game.data.Scoreboard.level;  console.log('GAME DATA');console.log(game);"
             },
             "children": [
@@ -265,7 +265,7 @@
               "passed": false
             },
             "events": {
-              "onStart": "console.log('Controls: onStart'); if(game.data.Scoreboard.players.length == 0){for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i] = { tokens: 0, health: 0, passed: false };};};",
+              "onStart": "console.log('Controls: onStart');",
               "onOpponentUpdate": "console.log('Controls: onOpponentUpdate'); const dc = opponentGame.data.Controls; game.data.Scoreboard.players.[opponentGame.turn.orderPosition].tokens = dc.tokens; game.data.Scoreboard.players[opponentGame.turn.orderPosition].health = dc.health; game.data.Scoreboard.players[opponentGame.turn.orderPosition].passed = dc.passed;",
               "onNewTurn": ""
             },
