@@ -283,7 +283,8 @@
             "blueprint": {
               "type": "div",
               "props": {
-                "className": "controls"
+                "className": "controls",
+                "display": "{{ (game.data.Controls.index == game.turn.orderPosition && game.turn.count > 0 && !game.isEliminated) ? 'flex' : 'none' }}"
               },
               "children": [
                 "{{ JSON.stringify(game) }}",
