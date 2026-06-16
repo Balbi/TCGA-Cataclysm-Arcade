@@ -107,12 +107,11 @@
             {
               "direction": "row",
               "isSymetricalForOpponents": false,
-              "alignment": "CENTER",
               "content": [
                 {
                   "section": "Boss",
                   "style": {
-                    "width": "16vh"
+                    "width": "11vh"
                   }
                 }
               ]
@@ -243,7 +242,7 @@
                             "height": "100%"
                           }
                         },
-                        "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ item?.passed ? 'next' : 'pass' }}.png"
+                        "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ !!item?.passed ? 'next' : 'pass' }}.png"
                       }
                     ]
                   }
@@ -253,6 +252,7 @@
           },
           "Controls": {
             "type": "custom",
+            "isShared": false,
             "blueprint": {
               "type": "div",
               "props": {
@@ -266,7 +266,7 @@
             },
             "events": {
               "onStart": "console.log('Controls: onStart'); console.log(game);",
-              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate'); const dc = opponentGame.data.Controls; game.data.Scoreboard.players.[opponentGame.turn.orderPosition].tokens = dc.tokens; game.data.Scoreboard.players[opponentGame.turn.orderPosition].health = dc.health; game.data.Scoreboard.players[opponentGame.turn.orderPosition].passed = dc.passed; console.log(game);",
+              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate'); game.data.Scoreboard.players[opponentGame.turn.orderPosition] = opponentGame.data.Controls; console.log(game);",
               "onNewTurn": ""
             },
             "children": [
