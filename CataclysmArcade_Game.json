@@ -157,7 +157,7 @@
           },
           "Scoreboard": {
             "type": "custom",
-            "playerRenderOnly": true,
+            "isShared": true,
             "blueprint": {
               "type": "div",
               "props": {
@@ -274,7 +274,7 @@
             },
             "events": {
               "onStart": "console.log('Scoreboard: onStart'); console.log(game);",
-              "onNewTurn": "console.log('Scoreboard: onNewTurn'); game.data.Scoreboard.level = Math.min(game.data.Scoreboard.level + 1, 9); console.log(game);"
+              "onNewTurn": "console.log('Scoreboard: onNewTurn'); const gs = game.data.Scoreboard; gs.level = Math.min(Math.max(game.turn.count, 1), 9); const gc = game.data.Controls; gc.tokens = Math.min(Math.max(game.turn.count, 1), 9); gc.passed = false; const gp = gs.players[gc.index]; gp.tokens = gs.level; gp.passed = false; console.log(game);"
             }
           },
           "Controls": {
@@ -342,7 +342,7 @@
             "events": {
               "onStart": "console.log('Controls: onStart', game); game.data.Controls.index = game.turn.orderPosition; console.log(game);",
               "onOpponentUpdate": "console.log('Controls: onOpponentUpdate', game, opponentGame); const ogc = opponentGame.data.Controls; const ogs = game.data.Scoreboard.players[opponentGame.turn.orderPosition]; ogs.health = ogc.health; ogs.tokens = ogc.tokens; ogs.passed = ogc.passed;",
-              "onNewTurn": "console.log('Controls: onNewTurn', game); const gc = game.data.Controls; gc.index = game.turn.orderPosition; gc.passed = false; gc.tokens = Math.min(Math.max(game.turn.count,1),9); const gs = game.data.Scoreboard.players[gc.index]; gs.health = gc.health; gs.tokens = gc.tokens; gs.passed = gc.passed; console.log(game);"
+              "onNewTurn": "console.log('Controls: onNewTurn', game); console.log(game);"
             }
           }
         }
