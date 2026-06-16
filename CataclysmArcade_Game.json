@@ -204,10 +204,6 @@
                     "children": [
                       {
                         "type": "div",
-                        "children": "Player {{ index + 1 }}"
-                      },
-                      {
-                        "type": "div",
                         "children": "Item: {{ JSON.stringify(item) }}"
                       },
                       {
