@@ -157,7 +157,7 @@
           },
           "Scoreboard": {
             "type": "custom",
-            "isShared": true,
+            "playerRenderOnly": true,
             "blueprint": {
               "type": "div",
               "props": {
@@ -279,7 +279,7 @@
           },
           "Controls": {
             "type": "custom",
-            "isShared": false,
+            "playerRenderOnly": true,
             "blueprint": {
               "type": "div",
               "props": {
