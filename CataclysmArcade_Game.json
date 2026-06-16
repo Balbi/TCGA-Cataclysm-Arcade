@@ -322,7 +322,7 @@
                     {
                       "type": "button",
                       "props":{
-                        "disabled": "{{ game.data.Controls.passed ? 'true' : 'false' }}"
+                        "className": "{{ game.data.Controls.passed ? 'disabled ' : '' }}"
                       },
                       "children": "Pass",
                       "onClick": "game.data.Controls.passed = true; game.data.Scoreboard.players[game.turn.orderPosition].passed = true; chatLog('has passed.')"
@@ -339,8 +339,8 @@
             },
             "events": {
               "onStart": "console.log('Controls: onStart', game); game.data.Controls.index = game.turn.orderPosition; console.log(game);",
-              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate', game, opponentGame); const gc = opponentGame.data.Controls; const gs = game.data.Scoreboard.players[gc.index]; gs.health = gc.health; gs.tokens = gc.tokens; gs.passed = gc.passed;",
-              "onNewTurn": "console.log('Controls: onNewTurn', game); const gc = game.data.Controls; const gs = game.data.Scoreboard.players[gc.index]; gc.tokens = Math.min(Math.max(game.turn.count,1),9); gc.passed = false; gc.index = game.turn.orderPosition; gs.health = gc.health; gs.tokens = gc.tokens; gs.passed = gc.passed; console.log(game);"
+              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate', game, opponentGame); const ogc = opponentGame.data.Controls; const ogs = game.data.Scoreboard.players[opponentGame.turn.orderPosition]; ogs.health = ogc.health; ogs.tokens = ogc.tokens; ogs.passed = ogc.passed;",
+              "onNewTurn": "console.log('Controls: onNewTurn', game); const gc = game.data.Controls; gc.index = game.turn.orderPosition; gc.passed = false; gc.tokens = Math.min(Math.max(game.turn.count,1),9); const gs = game.data.Scoreboard.players[gc.index]; gs.health = gc.health; gs.tokens = gc.tokens; gs.passed = gc.passed; console.log(game);"
             }
           }
         }
