@@ -186,9 +186,9 @@
                   "props": {
                     "style": {
                       "height": "100%"
-                    }
-                  },
-                  "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/level_{{ game.data.Scoreboard.level }}.png"
+                    },
+                    "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/level_{{ game.data.Scoreboard.level }}.png"
+                  }
                 },
                 {
                   "type": "loop",
