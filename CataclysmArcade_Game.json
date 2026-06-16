@@ -309,7 +309,7 @@
             },
             "events": {
               "onStart": "console.log('Controls: onStart'); console.log(game);",
-              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate'); game.data.Scoreboard.players[opponentGame.turn.orderPosition] = opponentGame.data.Controls; console.log(game);",
+              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate'); game.data.Scoreboard.players[opponentGame.turn.orderPosition] = opponentGame.data.Controls; game.data.Scoreboard.players[opponent.turn.orderPosition].index = opponent.turn.orderPosition; console.log(game);",
               "onNewTurn": ""
             }
           }
