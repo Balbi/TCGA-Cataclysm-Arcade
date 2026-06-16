@@ -291,7 +291,7 @@
                 {
                   "type": "div",
                   "props": {
-                    "className": "d-flex flex-column justify-content-center position-fixed end-0 top-50 {{ game.data.Scoreboard.turnPlayerIndex % game.turn.totalPlayers == game.turn.orderPosition ? '' : 'disabled' }}",
+                    "className": "d-flex flex-column justify-content-center position-fixed end-0 top-50",
                   "style": {
                     "--scoreboard-width": "6vh",
                     "--scoreboard-font-weight": "700",
@@ -304,7 +304,8 @@
                     "backdropFilter": "blur(20px)",
                     "padding": "0.5vh",
                     "backgroundColor": "#202020c9",
-                    "borderRadius": "0.5vh"
+                    "borderRadius": "0.5vh",
+                    "display": "{{ (game.data.Scoreboard.turnPlayerIndex % game.turn.totalPlayers) == game.turn.orderPosition ? 'flex' : 'none' }}"
                   }
                   },
                   "children": [
@@ -340,7 +341,7 @@
                         "className": "{{ game.data.Controls.passed ? 'disabled ' : '' }}"
                       },
                       "children": "Next",
-                      "onClick": "game.data.Controls.passed = true; let TPI = game.data.Scoreboard.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.Scoreboard.players[TPI % game.turn.totalPlayers].passed){ game.data.Scoreboard.turnPlayerIndex = TPI; break; } TPI++; }; chatLog('has ended their action.')"
+                      "onClick": "let TPI = game.data.Scoreboard.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.Scoreboard.players[TPI % game.turn.totalPlayers].passed){ game.data.Scoreboard.turnPlayerIndex = TPI; break; } TPI++; }; chatLog('has ended their action.')"
                     }
                   ]
                 }
