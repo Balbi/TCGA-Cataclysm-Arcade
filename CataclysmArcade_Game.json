@@ -220,18 +220,18 @@
                             "props": {
                               "style": {
                                 "height": "100%"
-                              }
-                            },
-                            "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item?.tokens }}.png"
+                              },
+                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item?.tokens }}.png"
+                            }
                           },
                           {
                             "type": "img",
                             "props": {
                               "style": {
                                 "height": "100%"
-                              }
-                            },
-                            "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ !!item?.passed ? 'next' : 'pass' }}.png"
+                              },
+                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ !!item?.passed ? 'next' : 'pass' }}.png"
+                            }
                           }
                         ]
                       }
@@ -252,7 +252,7 @@
           },
           "Controls": {
             "type": "custom",
-            "isShared": false,
+            "isShared": true,
             "blueprint": {
               "type": "div",
               "props": {
