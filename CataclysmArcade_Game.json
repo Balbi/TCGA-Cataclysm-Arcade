@@ -58,11 +58,8 @@
   },
   "gameplay": {
     "Standard": {
-      "beforeGameStart": {
-        "chooseAnotherStartingPlayer": true
-      },
       "mulligan": {
-        "triggeredByButton": false,
+        "triggeredByButton": true,
         "startingHandSize": 4,
         "mulliganCount": {
           "min": 0,
@@ -83,7 +80,7 @@
         }
       },
       "newTurn": {
-        "drawOnStart": false,
+        "drawOnStart": true,
         "sharedTurn": true,
         "firstPlayerTokenName": "",
         "drawPerTurn": "1"
@@ -197,6 +194,7 @@
                   "template": {
                     "type": "div",
                     "props": {
+                      "className": "d-flex flex-column justify-content-between",
                       "style": {
                         "height": "100%"
                       }
@@ -204,13 +202,37 @@
                   },
                   "children": [
                     {
-                      "type": "img",
+                      "type": "h3",
+                      "display":"Player {{ index + 1 }}"
+                    },
+                    {
+                      "type": "div",
                       "props": {
+                        "className": "d-flex flex-row justify-content-around",
                         "style": {
-                          "height": "100%"
+                          "aspect-ratio": "1"
                         }
                       },
-                      "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item.tokens }}.png"
+                      "children": [
+                        {
+                          "type": "img",
+                          "props": {
+                            "style": {
+                              "height": "100%"
+                            },
+                            "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item.tokens }}.png"
+                          }
+                        },
+                        {
+                          "type": "img",
+                          "props": {
+                            "style": {
+                              "height": "100%"
+                            },
+                            "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ item.passed ? 'next' : 'pass' }}.png"
+                          }
+                        }
+                      ]
                     }
                   ]
                 }
