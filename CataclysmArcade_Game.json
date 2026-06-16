@@ -279,13 +279,14 @@
           },
           "Controls": {
             "type": "custom",
-            "isShared": true,
+            "isShared": false,
             "blueprint": {
               "type": "div",
               "props": {
                 "className": "controls"
               },
               "children": [
+                "{{ JSON.stringify(game) }}",
                 {
                   "type": "div",
                   "props": {
