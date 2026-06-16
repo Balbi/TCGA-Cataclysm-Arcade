@@ -188,8 +188,8 @@
               "players": []
             },
             "events": {
-              "onStart": "console.log('OnStart')",
-              "onNewTurn": "if(game.data.Scoreboard.players.length == 0){for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i] = { tokens: 0, health: 0, passed: false };};}; game.data.Scoreboard.level = Math.min(game.data.Scoreboard.level + 1, 9); for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i].tokens = game.data.Scoreboard.level; game.data.Scoreboard.players[i].passed = false;}; game.data.Controls.tokens = game.data.Scoreboard.level;  console.log('GAME DATA');console.log(game);"
+              "onStart": "if(game.data.Scoreboard.players.length == 0){for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i] = { tokens: 0, health: 0, passed: false };};};",
+              "onNewTurn": "game.data.Scoreboard.level = Math.min(game.data.Scoreboard.level + 1, 9); for(let i = 0; i < game.turn.totalPlayers; i++){game.data.Scoreboard.players[i].tokens = game.data.Scoreboard.level; game.data.Scoreboard.players[i].passed = false;}; game.data.Controls.tokens = game.data.Scoreboard.level;  console.log('GAME DATA');console.log(game);"
             },
             "children": [
               {
@@ -234,7 +234,7 @@
                             "height": "100%"
                           }
                         },
-                        "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item.tokens }}.png"
+                        "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item?.tokens }}.png"
                       },
                       {
                         "type": "img",
@@ -243,7 +243,7 @@
                             "height": "100%"
                           }
                         },
-                        "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ item.passed ? 'next' : 'pass' }}.png"
+                        "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ item?.passed ? 'next' : 'pass' }}.png"
                       }
                     ]
                   }
@@ -265,7 +265,7 @@
               "passed": false
             },
             "events": {
-              "onOpponentUpdate": "const dc = opponentGame.data.Controls; game.data.Scoreboard.players[opponentGame.turn.orderPosition].tokens = dc.tokens; game.data.Scoreboard.players[opponentGame.turn.orderPosition].health = dc.health; game.data.Scoreboard.players[opponentGame.turn.orderPosition].passed = dc.passed;",
+              "onOpponentUpdate": "const dc = opponentGame.data.Controls; game.data.Scoreboard.players?.[opponentGame.turn.orderPosition]?.tokens = dc.tokens; game.data.Scoreboard.players?.[opponentGame.turn.orderPosition]?.health = dc.health; game.data.Scoreboard.players?.[opponentGame.turn.orderPosition]?.passed = dc.passed;",
               "onNewTurn": ""
             },
             "children": [
