@@ -3,7 +3,8 @@
   "menuBackgroundImage": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/background.jpg",
   "defaultRessources": {
     "backgrounds": [
-      "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/playmat.webp"
+      "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/playmat.webp",
+      "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/playmat2.webp"
     ],
     "decksUrl": "https://balbi.github.io/TCGA-Cataclysm-Arcade/CataclysmArcade_Decks.json"
   },
@@ -83,9 +84,9 @@
       },
       "newTurn": {
         "drawOnStart": false,
-        "sharedTurn": false,
+        "sharedTurn": true,
         "firstPlayerTokenName": "",
-        "drawPerTurn": "0"
+        "drawPerTurn": "1"
       },
       "tokens": [],
       "countersStartingValues": [
@@ -97,30 +98,26 @@
           "direction": "column",
           "isSymetricalForOpponents": false,
           "style": {
-            "marginTop": "10vh"
+            "marginTop": "4vh"
           },
           "content": [
             {
-              "section": "Gigs"
+              "section": "Scoreboard"
             },
             {
               "direction": "row",
               "isSymetricalForOpponents": false,
               "content": [
                 {
-                  "section": "Battlefield"
-                },
-                {
                   "section": "Boss",
                   "style": {
-                    "margin": "0 2vh",
                     "width": "16vh"
                   }
-                },
-                {
-                  "section": "Battlefield2"
                 }
               ]
+            },
+            {
+              "section": "Battlefield"
             }
           ]
         },
@@ -132,7 +129,7 @@
         "sectionsDict": {
           "Boss": {
             "isHidden": "no",
-            "height": "MEDIUM",
+            "height": "SMALL",
             "alignment": "CENTER",
             "opponentAlignment": false,
             "noAutoPayTo": "true",
@@ -146,8 +143,8 @@
           },
           "Battlefield": {
             "isHidden": "no",
-            "height": "MEDIUM",
-            "alignment": "CENTER",
+            "height": "SMALL",
+            "alignment": "END",
             "opponentAlignment": false,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
@@ -158,21 +155,7 @@
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
-          "Battlefield2": {
-            "isHidden": "no",
-            "height": "MEDIUM",
-            "alignment": "CENTER",
-            "opponentAlignment": false,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "noQuickActions": true,
-            "enterTapped": false,
-            "enterSpun": false,
-            "isGroupForbidden": false,
-            "keepTappedNewTurn": false,
-            "showHiddenCardInHistory": false
-          },
-          "Gigs": {
+          "Scoreboard": {
             "type": "custom",
             "isShared": true,
             "blueprint": {
@@ -180,16 +163,16 @@
               "props": {
                 "className": "d-flex flex-column justify-content-between position-fixed start-50 top-50 translate-middle",
                 "style": {
-                  "--gigs-width": "7vh",
-                  "--gigs-font-weight": "700",
-                  "--gigs-font-size": "1.7vh",
-                  "--gigs-blue": "#64bfe3",
-                  "--gigs-red": "#d83938",
-                  "--gigs-opacity": "0.3",
-                  "--gigs-padding": "0.7vh 0",
+                  "--scoreboard-width": "6vh",
+                  "--scoreboard-font-weight": "700",
+                  "--scoreboard-font-size": "1.7vh",
+                  "--scoreboard-blue": "#64bfe3",
+                  "--scoreboard-red": "#d83938",
+                  "--scoreboard-opacity": "0.3",
+                  "--scoreboard-padding": "0.7vh 0",
                   "--input-color-empty": "transparent",
-                  "height": "10vh",
-                  "width": "115vh",
+                  "height": "7vh",
+                  "width": "50vh",
                   "backdropFilter": "blur(20px)",
                   "padding": "0.5vh",
                   "backgroundColor": "#202020c9",
@@ -200,291 +183,25 @@
               "children": [
                 {
                   "type": "div",
-                  "props": {
-                    "className": "d-flex gap-3"
+                  "style": {
+                    "height": "100%",
+                    "width": "6vh",
+                    "backgroundColor": "black"
                   },
-                  "children": [
-                    {
-                      "type": "div",
-                      "props": {
-                        "className": "d-flex ",
-                        "style": {
-                          "marginRight": "auto"
-                        }
-                      },
-                      "children": [
-                        {
-                          "type": "loop",
-                          "iterable": "game.data.OppGigs.dices",
-                          "template": {
-                            "type": "div",
-                            "props": {
-                              "className": "position-relative on-section-hovered",
-                              "style": {
-                                "width": "var(--gigs-width)",
-                                "pointerEvents": "{{item.stolen || item.value === 0 ? 'none' : 'auto'}}"
-                              }
-                            },
-                            "children": [
-                              {
-                                "type": "input-number",
-                                "props": {
-                                  "value": "{{item.value}}",
-                                  "readOnly": true,
-                                  "type": "number",
-                                  "style": {
-                                    "backgroundColor": "transparent",
-                                    "background": "url(https://russeus.github.io/CyberpunkTCG-TCGA/Images/Blue/d{{item.dice}}.png) center / contain no-repeat",
-                                    "textAlign": "center",
-                                    "--input-color": "{{item.stolen ? 'transparent' : 'var(--gigs-blue)'}}",
-                                    "opacity": "{{item.stolen ? 'var(--gigs-opacity)' : '1'}}",
-                                    "fontSize": "var(--gigs-font-size)",
-                                    "fontWeight": "var(--gigs-font-weight)",
-                                    "padding": "var(--gigs-padding)"
-                                  }
-                                }
-                              },
-                              {
-                                "type": "button",
-                                "props": {
-                                  "className": "hovered-reveal position-absolute top-100 start-50",
-                                  "style": {
-                                    "translate": "-50% -10%",
-                                    "zIndex": 1
-                                  }
-                                },
-                                "children": "Steal",
-                                "onClick": "game.data.OppGigs.dices[index].stolen = true"
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "div",
-                      "props": {
-                        "className": "d-flex ",
-                        "style": {
-                          "marginLeft": "auto"
-                        }
-                      },
-                      "children": [
-                        {
-                          "type": "loop",
-                          "iterable": "game.data.MyGigs.dices",
-                          "template": {
-                            "type": "div",
-                            "props": {
-                              "className": "position-relative on-section-hovered",
-                              "style": {
-                                "width": "var(--gigs-width)",
-                                "pointerEvents": "{{item.stolen && item.value !== 0 ? 'auto' : 'none'}}"
-                              }
-                            },
-                            "children": [
-                              {
-                                "type": "input-number",
-                                "props": {
-                                  "value": "{{item.value}}",
-                                  "type": "number",
-                                  "readOnly": true,
-                                  "style": {
-                                    "backgroundColor": "transparent",
-                                    "background": "url(https://russeus.github.io/CyberpunkTCG-TCGA/Images/Red/d{{item.dice}}.png) center / contain no-repeat",
-                                    "textAlign": "center",
-                                    "--input-color": "{{item.stolen ? 'var(--gigs-red)' : 'transparent'}}",
-                                    "opacity": "{{item.stolen ? '1' : 'var(--gigs-opacity)'}}",
-                                    "fontSize": "var(--gigs-font-size)",
-                                    "fontWeight": "var(--gigs-font-weight)",
-                                    "padding": "var(--gigs-padding)"
-                                  }
-                                }
-                              },
-                              {
-                                "type": "button",
-                                "props": {
-                                  "className": "hovered-reveal position-absolute top-100 start-50",
-                                  "style": {
-                                    "translate": "-50% -10%",
-                                    "zIndex": 1
-                                  }
-                                },
-                                "children": "Steal",
-                                "onClick": "game.data.MyGigs.dices[index].stolen = false"
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "div",
-                      "props": {
-                        "className": "d-flex align-items-center justify-content-center",
-                        "style": {
-                          "color": "var(--gigs-red)",
-                          "fontSize": "var(--gigs-font-size)",
-                          "fontWeight": "var(--gigs-font-weight)",
-                          "width": "var(--gigs-width)"
-                        }
-                      },
-                      "children": "{{game.data.Totals.opp}}"
-                    }
-                  ]
-                },
-                {
-                  "type": "div",
-                  "props": {
-                    "className": "d-flex gap-3"
-                  },
-                  "children": [
-                    {
-                      "type": "div",
-                      "props": {
-                        "className": "d-flex ",
-                        "style": {
-                          "marginRight": "auto"
-                        }
-                      },
-                      "children": [
-                        {
-                          "type": "loop",
-                          "iterable": "game.data.OppGigs.dices",
-                          "template": {
-                            "type": "div",
-                            "props": {
-                              "className": "position-relative on-section-hovered",
-                              "style": {
-                                "width": "var(--gigs-width)",
-                                "pointerEvents": "{{item.stolen ? 'auto' : 'none'}}"
-                              }
-                            },
-                            "children": [
-                              {
-                                "type": "input-number",
-                                "props": {
-                                  "value": "{{item.value}}",
-                                  "type": "number",
-                                  "style": {
-                                    "backgroundColor": "transparent",
-                                    "background": "url(https://russeus.github.io/CyberpunkTCG-TCGA/Images/Red/d{{item.dice}}.png) center / contain no-repeat",
-                                    "textAlign": "center",
-                                    "--input-color": "{{item.stolen ? 'var(--gigs-red)' : 'transparent'}}",
-                                    "opacity": "{{item.stolen ? '1' : 'var(--gigs-opacity)'}}",
-                                    "fontSize": "var(--gigs-font-size)",
-                                    "fontWeight": "var(--gigs-font-weight)",
-                                    "padding": "var(--gigs-padding)"
-                                  }
-                                },
-                                "onChange": "game.data.OppGigs.dices[index].value = value; chatLog('changed dice to ' + value + `/` + item.dice)"
-                              },
-                              {
-                                "type": "button",
-                                "props": {
-                                  "className": "hovered-reveal position-absolute top-0 start-50",
-                                  "style": {
-                                    "translate": "-50% -90%"
-                                  }
-                                },
-                                "children": "Roll",
-                                "onClick": "game.data.OppGigs.dices[index].value = Math.floor(Math.random() * game.data.OppGigs.dices[index].dice) + 1; game.data.MyGigs.hasRolled = true; chatLog(`rolled ` + game.data.OppGigs.dices[index].value + '/' + game.data.OppGigs.dices[index].dice)"
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "div",
-                      "props": {
-                        "className": "position-relative h-100"
-                      },
-                      "children": [
-                        {
-                          "type": "div",
-                          "props": {
-                            "className": "box-container position-absolute start-50 top-50 translate-middle text-nowrap m-0",
-                            "style": {
-                              "opacity": "{{game.turn.isMyTurn && !game.data.MyGigs.hasRolled ? 1 : 0}}"
-                            }
-                          },
-                          "children": "Don't forget to roll!"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "div",
-                      "props": {
-                        "className": "d-flex ",
-                        "style": {
-                          "marginLeft": "auto"
-                        }
-                      },
-                      "children": [
-                        {
-                          "type": "loop",
-                          "iterable": "game.data.MyGigs.dices",
-                          "template": {
-                            "type": "div",
-                            "props": {
-                              "className": "position-relative on-section-hovered",
-                              "style": {
-                                "width": "var(--gigs-width)",
-                                "pointerEvents": "{{item.stolen ? 'none' : 'auto'}}"
-                              }
-                            },
-                            "children": [
-                              {
-                                "type": "input-number",
-                                "props": {
-                                  "value": "{{item.value}}",
-                                  "type": "number",
-                                  "style": {
-                                    "backgroundColor": "transparent",
-                                    "background": "url(https://russeus.github.io/CyberpunkTCG-TCGA/Images/Blue/d{{item.dice}}.png) center / contain no-repeat",
-                                    "textAlign": "center",
-                                    "--input-color": "{{item.stolen ? 'transparent' : 'var(--gigs-blue)'}}",
-                                    "opacity": "{{item.stolen ? 'var(--gigs-opacity)' : '1'}}",
-                                    "fontSize": "var(--gigs-font-size)",
-                                    "fontWeight": "var(--gigs-font-weight)",
-                                    "padding": "var(--gigs-padding)"
-                                  }
-                                },
-                                "onChange": "game.data.MyGigs.dices[index].value = value; chatLog('changed dice to ' + value + `/` + item.dice)"
-                              },
-                              {
-                                "type": "button",
-                                "props": {
-                                  "className": "hovered-reveal position-absolute top-0 start-50",
-                                  "style": {
-                                    "translate": "-50% -90%"
-                                  }
-                                },
-                                "children": "Roll",
-                                "onClick": "game.data.MyGigs.dices[index].value = Math.floor(Math.random() * game.data.MyGigs.dices[index].dice) + 1; game.data.MyGigs.hasRolled = true; chatLog(`rolled ` + game.data.MyGigs.dices[index].value + '/' + game.data.OppGigs.dices[index].dice)"
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "div",
-                      "props": {
-                        "className": "d-flex align-items-center justify-content-center",
-                        "style": {
-                          "color": "var(--gigs-blue)",
-                          "fontSize": "var(--gigs-font-size)",
-                          "fontWeight": "var(--gigs-font-weight)",
-                          "width": "var(--gigs-width)"
-                        }
-                      },
-                      "children": "{{game.data.Totals.my}}"
-                    }
-                  ]
+                  "children": []
                 }
               ]
+            },
+            "defaultValue": {
+              "level": 1,
+              "tokens": [0,0,0,0],
+              "health": [0,0,0,0],
+              "passed": [false, false, false, false]
+            },
+            "events": {
+              "onUpdate": "",
+              "onOpponentUpdate": "",
+              "onStart": "console.log('GAME DATA');console.log(game)"
             }
           }
         }
