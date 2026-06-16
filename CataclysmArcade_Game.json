@@ -253,7 +253,7 @@
           },
           "Controls": {
             "type": "custom",
-            "isShared": true,
+            "isShared": false,
             "blueprint": {
               "type": "div",
               "props": {
