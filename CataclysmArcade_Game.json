@@ -322,7 +322,7 @@
                     {
                       "type": "button",
                       "props":{
-                        "disabled": "{{ game.data.Controls.passed }}"
+                        "disabled": "{{ game.data.Controls.passed ? true : false }}"
                       },
                       "children": "Pass",
                       "onClick": "game.data.Controls.passed = true; game.data.Scoreboard.players[game.turn.orderPosition].passed = true; chatLog('has passed.')"
