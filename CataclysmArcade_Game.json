@@ -211,43 +211,43 @@
                     "style": {
                       "height": "100%"
                     }
-                  }
-                },
-                "children": [
-                  {
-                    "type": "h3",
-                    "display": "Player {{ index + 1 }}"
                   },
-                  {
-                    "type": "div",
-                    "props": {
-                      "className": "d-flex flex-row justify-content-around",
-                      "style": {
-                        "aspect-ratio": "1"
-                      }
+                  "children": [
+                    {
+                      "type": "h3",
+                      "display": "Player {{ index + 1 }}"
                     },
-                    "children": [
-                      {
-                        "type": "img",
-                        "props": {
-                          "style": {
-                            "height": "100%"
-                          },
-                          "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item.tokens }}.png"
+                    {
+                      "type": "div",
+                      "props": {
+                        "className": "d-flex flex-row justify-content-around",
+                        "style": {
+                          "aspect-ratio": "1"
                         }
                       },
-                      {
-                        "type": "img",
-                        "props": {
-                          "style": {
-                            "height": "100%"
-                          },
-                          "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ item.passed ? 'next' : 'pass' }}.png"
+                      "children": [
+                        {
+                          "type": "img",
+                          "props": {
+                            "style": {
+                              "height": "100%"
+                            },
+                            "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_{{ item.tokens }}.png"
+                          }
+                        },
+                        {
+                          "type": "img",
+                          "props": {
+                            "style": {
+                              "height": "100%"
+                            },
+                            "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ item.passed ? 'next' : 'pass' }}.png"
+                          }
                         }
-                      }
-                    ]
-                  }
-                ]
+                      ]
+                    }
+                  ]
+                }
               }
             ]
           },
