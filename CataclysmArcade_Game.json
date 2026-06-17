@@ -171,11 +171,19 @@
               "roundPlayerIndex": -1,
               "health": [0,0,0,0],
               "tokens": [0,0,0,0],
-              "passed": [false, false, false, false]
+              "passed": [false, false, false, false],
+              "players": [
+                {
+                  "health": 0,
+                  "tokens": 0,
+                  "passed": false,
+                  "index": 0
+                }
+              ]
             },
             "events": {
-              "onNewTurn": "console.log('Scoreboard: onNewTurn', game); game.data.PlayerData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.PlayerData.tokens.fill(game.data.PlayerData.level); game.data.PlayerData.passed.fill(false); game.data.PlayerData.roundPlayerIndex = (game.data.PlayerData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.PlayerData.turnPlayerIndex = game.turn.currentPlayerIndex;",
-              "onOpponentUpdate": "console.log('Scoreboard: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self);"
+              "onNewTurn": "console.log('PlayerData: onNewTurn', game); game.data.PlayerData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.PlayerData.tokens.fill(game.data.PlayerData.level); game.data.PlayerData.passed.fill(false); game.data.PlayerData.roundPlayerIndex = (game.data.PlayerData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.PlayerData.turnPlayerIndex = game.turn.currentPlayerIndex;",
+              "onOpponentUpdate": "console.log('PlayerData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self);"
             }
           },
           "Scoreboard": {
@@ -222,13 +230,13 @@
                       "style": {
                         "height": "100%",
                         "padding": "0 1vh",
-                        "display": "{{ item.index < game.turn.totalPlayers ? 'flex' : 'none' }}"
+                        "display": "{{ index < game.turn.totalPlayers ? 'flex' : 'none' }}"
                       }
                     },
                     "children": [
                       {
                         "type": "div",
-                        "children": "{{ game.turn.orderPosition == item.index ? 'You' : 'Player ' + (item.index + 1)}}"
+                        "children": "{{ game.turn.orderPosition == index ? 'You' : 'Player ' + (index + 1)}}"
                       },
                       {
                         "type": "div",
@@ -283,7 +291,7 @@
                                         "font-size": "2.25vh"
                                       }
                                     },
-                                    "children": "{{ Math.max(game.data.PlayerData.health[item.index], 0) }}"
+                                    "children": "{{ Math.max(game.data.PlayerData.health[index], 0) }}"
                                   }
                                 ]
                               }
@@ -332,7 +340,7 @@
                                         "font-size": "2.25vh"
                                       }
                                     },
-                                    "children": "{{ Math.max(game.data.PlayerData.tokens[item.index], 0) }}"
+                                    "children": "{{ Math.max(game.data.PlayerData.tokens[index], 0) }}"
                                   }
                                 ]
                               }
@@ -344,7 +352,7 @@
                               "style": {
                                 "height": "100%"
                               },
-                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ game.data.PlayerData.passed[item.index] ? 'red' : 'green' }}.png"
+                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ game.data.PlayerData.passed[index] ? 'red' : 'green' }}.png"
                             }
                           }
                         ]
