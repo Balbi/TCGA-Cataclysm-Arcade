@@ -432,7 +432,7 @@
                         {
                           "type": "input-number",
                           "props": {
-                            "value": "{{ game.data.PlayerData.health[game.turn.orderPosition] }}",
+                            "value": "{{ game.data.PlayerData.players[game.turn.orderPosition].health }}",
                             "type": "number",
                             "style": {
                               "width": "4vh",
