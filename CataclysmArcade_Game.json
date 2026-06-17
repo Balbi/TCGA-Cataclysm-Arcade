@@ -240,8 +240,10 @@
                                 "type": "div",
                                 "props": {
                                   "style": {
+                                    "top": "0.075vh",
                                     "position": "absolute",
                                     "height": "100%",
+                                    "width": "100%",
                                     "color": "white",
                                     "font-weight": "bold",
                                     "display": "flex",
@@ -250,7 +252,10 @@
                                   }
                                 },
                                 "children": [
-                                "{{ item.health < 0 || item.health > 25 ? Math.max(item.health, 0) : '' }}"
+                                  {
+                                    "type": "span",
+                                    "children": "{{ item.health < 0 || item.health > 25 ? Math.max(item.health, 0) : '' }}"
+                                  }
                                 ]
                               }
                             ]
