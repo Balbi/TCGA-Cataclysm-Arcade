@@ -86,9 +86,7 @@
         "drawPerTurn": "1"
       },
       "tokens": [],
-      "countersStartingValues": [
-        0
-      ],
+      "countersStartingValues": [],
       "hideFacedDownCards": false,
       "sections": {
         "layout": {
