@@ -162,13 +162,22 @@
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
-          "PlayerData": {
+          "TurnData": {
             "type": "custom",
             "isShared": true,
             "defaultValue": {
               "level": 1,
               "turnPlayerIndex": -1,
-              "roundPlayerIndex": -1,
+              "roundPlayerIndex": -1
+            },
+            "events": {
+              "onOpponentUpdate":"console.log('PlayerData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self); const ogt = opponentGame.data.TurnData; Object.assign(game.data.TurnData, { level: ogt.level, turnPlayerIndex: ogt.turnPlayerIndex, roundPlayerIndex: ogt.roundPlayerIndex });"
+            }
+          },
+          "PlayerData": {
+            "type": "custom",
+            "isShared": true,
+            "defaultValue": {
               "players": [
                 {
                   "health": 0,
@@ -197,7 +206,7 @@
               ]
             },
             "events": {
-              "onNewTurn": "console.log('PlayerData: onNewTurn', game); game.data.PlayerData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.PlayerData.roundPlayerIndex = (game.data.PlayerData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.PlayerData.turnPlayerIndex = game.turn.currentPlayerIndex; for(const player of game.data.PlayerData.players){ player.tokens = game.data.PlayerData.level; player.passed = false; }",
+              "onNewTurn": "console.log('PlayerData: onNewTurn', game); game.data.TurnData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.TurnData.roundPlayerIndex = (game.data.TurnData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.TurnData.turnPlayerIndex = game.turn.currentPlayerIndex; for(const player of game.data.PlayerData.players){ player.tokens = game.data.TurnData.level; player.passed = false; }",
               "onOpponentUpdate": "console.log('PlayerData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self); const ogp = opponentGame.data.PlayerData.players[opponentGame.turn.orderPosition]; Object.assign(game.data.PlayerData.players[ogp.index], { health: ogp.health, tokens: ogp.tokens, passed: ogp.passed });"
             }
           },
@@ -232,7 +241,7 @@
                     "style": {
                       "height": "100%"
                     },
-                    "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/level_{{ Math.max(game.data.PlayerData.level, 1) }}.png"
+                    "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/level_{{ Math.max(game.data.TurnData.level, 1) }}.png"
                   }
                 },
                 {
@@ -411,7 +420,7 @@
                     {
                       "type": "h4",
                       "props": {
-                        "visibility": "{{ game.data.PlayerData.turnPlayerIndex == game.turn.orderPosition && game.turn.count > 0 ? 'visible' : 'hidden' }}"
+                        "visibility": "{{ game.data.TurnData.turnPlayerIndex == game.turn.orderPosition && game.turn.count > 0 ? 'visible' : 'hidden' }}"
                       },
                       "children": [
                         "Your Turn!"
@@ -503,7 +512,7 @@
                               }
                             }
                           ],
-                          "onClick": "if(!game.data.PlayerData.players.filter(p => p.index != game.turn.orderPosition).every(player => player.passed)){ for(let i = game.turn.orderPosition + 1; i < game.turn.orderPosition + 4; i++){ if(!game.data.PlayerData.players[i % game.turn.totalPlayers].passed){ game.data.PlayerData.turnPlayerIndex = i % game.turn.totalPlayers; break; } } }; chatLog('has ended their action.')"
+                          "onClick": "if(!game.data.PlayerData.players.filter(p => p.index != game.turn.orderPosition).every(player => player.passed)){ for(let i = game.turn.orderPosition + 1; i < game.turn.orderPosition + 4; i++){ if(!game.data.PlayerData.players[i % game.turn.totalPlayers].passed){ game.data.TurnData.turnPlayerIndex = i % game.turn.totalPlayers; break; } } }; chatLog('has ended their action.')"
                         },
                         {
                           "type": "button",
@@ -533,7 +542,7 @@
                               }
                             }
                           ],
-                          "onClick": "game.data.PlayerData.players[game.turn.orderPosition].passed = true; if(!game.data.PlayerData.players.filter(p => p.index != game.turn.orderPosition).every(player => player.passed)){ for(let i = game.turn.orderPosition + 1; i < game.turn.orderPosition + 4; i++){ if(!game.data.PlayerData.players[i % game.turn.totalPlayers].passed){ game.data.PlayerData.turnPlayerIndex = i % game.turn.totalPlayers; break; } } }; chatLog('has passed.')"
+                          "onClick": "game.data.PlayerData.players[game.turn.orderPosition].passed = true; if(!game.data.PlayerData.players.filter(p => p.index != game.turn.orderPosition).every(player => player.passed)){ for(let i = game.turn.orderPosition + 1; i < game.turn.orderPosition + 4; i++){ if(!game.data.PlayerData.players[i % game.turn.totalPlayers].passed){ game.data.TurnData.turnPlayerIndex = i % game.turn.totalPlayers; break; } } }; chatLog('has passed.')"
                         }
                       ]
                     }
