@@ -198,7 +198,7 @@
             },
             "events": {
               "onNewTurn": "console.log('PlayerData: onNewTurn', game); game.data.PlayerData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.PlayerData.roundPlayerIndex = (game.data.PlayerData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.PlayerData.turnPlayerIndex = game.turn.currentPlayerIndex; for(const player of game.data.PlayerData.players){ player.tokens = game.data.PlayerData.level; player.passed = false; }",
-              "onOpponentUpdate": "console.log('PlayerData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self);"
+              "onOpponentUpdate": "console.log('PlayerData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self); const ogp = opponentGame.data.PlayerData.players[opponentGame.turn.orderPosition]; Object.assign(game.data.PlayerData.players[game.turn.orderPosition], { health: ogp.health, tokens: ogp.tokens, passed: ogp.passed });"
             }
           },
           "Scoreboard": {
