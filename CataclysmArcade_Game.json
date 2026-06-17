@@ -260,7 +260,8 @@
                                     "type": "span",
                                     "props": {
                                       "style": {
-                                        "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
+                                        "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000",
+                                        "font-size": "2.25vh"
                                       }
                                     },
                                     "children": "{{ Math.max(item.health, 0) }}"
@@ -500,7 +501,7 @@
             "events": {
               "onStart": "console.log('Controls: onStart', game); console.log(game);",
               "onUpdate": "console.log('Scoreboard: onUpdate'); const gc = game.data.Controls; const gs = game.data.Scoreboard.players[game.turn.orderPosition]; gs.health = +gc.health; gs.tokens = +gc.tokens; gs.passed = !!gc.passed; console.log(game);",
-              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate', game, opponentGame); const ogc = opponentGame.data.Controls; const ogs = game.data.Scoreboard.players[opponentGame.turn.orderPosition]; ogs.health = +ogc.health; ogs.tokens = +ogc.tokens; ogs.passed = !!ogc.passed;",
+              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate', game, opponentGame); const ogc = opponentGame.data.Controls; game.data.Scoreboard.players[opponentGame.turn.orderPosition] = Object.assign({index: opponentGame.turn.orderPosition}, ogc);",
               "onNewTurn": "console.log('Controls: onNewTurn', game); console.log(game);"
             }
           }
