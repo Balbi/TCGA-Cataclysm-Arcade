@@ -388,7 +388,7 @@
                     {
                       "type": "h4",
                       "props": {
-                        "visibility": "{{ (game.data.Scoreboard.turnPlayerIndex % game.turn.totalPlayers) == game.turn.orderPosition && game.turn.count > 0 ? 'visible' : 'hidden' }}"
+                        "visibility": "{{ (game.data.PlayerData.turnPlayerIndex % game.turn.totalPlayers) == game.turn.orderPosition && game.turn.count > 0 ? 'visible' : 'hidden' }}"
                       },
                       "children": [
                         "Your Turn!"
