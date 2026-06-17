@@ -102,6 +102,9 @@
               "section": "Scoreboard"
             },
             {
+              "section": "PlayerData"
+            },
+            {
               "direction": "row",
               "isSymetricalForOpponents": false,
               "style": {
@@ -159,9 +162,25 @@
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
-          "Scoreboard": {
+          "PlayerData": {
             "type": "custom",
             "isShared": true,
+            "defaultValue": {
+              "level": 1,
+              "turnPlayerIndex": -1,
+              "roundPlayerIndex": -1,
+              "health": [0,0,0,0],
+              "tokens": [0,0,0,0],
+              "passed": [false, false, false, false]
+            },
+            "events": {
+              "onNewTurn": "console.log('Scoreboard: onNewTurn', game); game.data.PlayerData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.PlayerData.tokens.fill(game.data.PlayerData.level); game.data.PlayerData.passed.fill(false); game.data.PlayerData.roundPlayerIndex = (game.data.PlayerData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.PlayerData.turnPlayerIndex = game.turn.currentPlayerIndex;",
+              "onOpponentUpdate": "console.log('Scoreboard: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self);"
+            }
+          },
+          "Scoreboard": {
+            "type": "custom",
+            "playerRenderOnly": true,
             "blueprint": {
               "type": "div",
               "props": {
@@ -190,12 +209,12 @@
                     "style": {
                       "height": "100%"
                     },
-                    "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/level_{{ Math.max(game.data.Scoreboard.level, 1) }}.png"
+                    "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/level_{{ Math.max(game.data.PlayerData.level, 1) }}.png"
                   }
                 },
                 {
                   "type": "loop",
-                  "iterable": "game.data.Scoreboard.players",
+                  "iterable": "game.data.PlayerData.health",
                   "template": {
                     "type": "div",
                     "props": {
@@ -264,7 +283,7 @@
                                         "font-size": "2.25vh"
                                       }
                                     },
-                                    "children": "{{ Math.max(item.health, 0) }}"
+                                    "children": "{{ Math.max(game.data.PlayerData.health[item.index], 0) }}"
                                   }
                                 ]
                               }
@@ -313,7 +332,7 @@
                                         "font-size": "2.25vh"
                                       }
                                     },
-                                    "children": "{{ Math.max(item.tokens, 0) }}"
+                                    "children": "{{ Math.max(game.data.PlayerData.tokens[item.index], 0) }}"
                                   }
                                 ]
                               }
@@ -325,7 +344,7 @@
                               "style": {
                                 "height": "100%"
                               },
-                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ item.passed ? 'red' : 'green' }}.png"
+                              "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ game.data.PlayerData.passed[item.index] ? 'red' : 'green' }}.png"
                             }
                           }
                         ]
@@ -334,43 +353,6 @@
                   }
                 }
               ]
-            },
-            "defaultValue": {
-              "level": 0,
-              "turnPlayerIndex": 0,
-              "startingPlayer": 0,
-              "players": [
-                {
-                  "tokens": 0,
-                  "health": 0,
-                  "passed": false,
-                  "index": 0
-                },
-                {
-                  "tokens": 0,
-                  "health": 0,
-                  "passed": false,
-                  "index": 1
-                },
-                {
-                  "tokens": 0,
-                  "health": 0,
-                  "passed": false,
-                  "index": 2
-                },
-                {
-                  "tokens": 0,
-                  "health": 0,
-                  "passed": false,
-                  "index": 3
-                }
-              ]
-            },
-            "events": {
-              "onStart": "console.log('Scoreboard: onStart', game, delta, self);",
-              "onUpdate": "console.log('Scoreboard: onUpdate', game, delta, self);",
-              "onNewTurn": "console.log('Scoreboard: onNewTurn', game, delta, self); game.data.Scoreboard.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.Controls.tokens = game.data.Scoreboard.level; game.data.Controls.passed = false; const gs = game.data.Scoreboard; for(const player of gs.players){ player.tokens = gs.level; player.passed = false; }; console.log(game);",
-              "onOpponentUpdate": "console.log('Scoreboard: onOpponentUpdate', game, opponentGame, delta, self); const gs = game.data.Scoreboard; const ogs = opponentGame.data.Scoreboard; if( ogs.turnPlayerIndex > gs.turnPlayerIndex){ gs.turnPlayerIndex = ogs.turnPlayerIndex; }; console.log(game, opponentGame);"
             }
           },
           "Controls": {
@@ -399,13 +381,15 @@
                       "backdropFilter": "blur(20px)",
                       "padding": "1.5vh",
                       "backgroundColor": "#202020c9",
-                      "borderRadius": "0.5vh",
-                      "display": "{{ (game.data.Scoreboard.turnPlayerIndex % game.turn.totalPlayers) == game.turn.orderPosition && game.turn.count > 0 ? 'flex' : 'none' }}"
+                      "borderRadius": "0.5vh"
                     }
                   },
                   "children": [
                     {
                       "type": "h4",
+                      "props": {
+                        "visibility": "{{ (game.data.Scoreboard.turnPlayerIndex % game.turn.totalPlayers) == game.turn.orderPosition && game.turn.count > 0 ? 'visible' : 'hidden' }}"
+                      },
                       "children": [
                         "Your Turn!"
                       ]
@@ -425,14 +409,14 @@
                         {
                           "type": "input-number",
                           "props": {
-                            "value": "{{ game.data.Controls.health }}",
+                            "value": "{{ game.data.PlayerData.health[game.turn.orderPosition] }}",
                             "type": "number",
                             "style": {
                               "width": "4vh",
                               "textAlign": "center"
                             }
                           },
-                          "onChange": "game.data.Controls.health = +value; chatLog('has updated their health to ' + value)"
+                          "onChange": "game.data.PlayerData.health[game.turn.orderPosition] = +value; chatLog('has updated their health to ' + value)"
                         }
                       ]
                     },
@@ -451,14 +435,14 @@
                         {
                           "type": "input-number",
                           "props": {
-                            "value": "{{ game.data.Controls.tokens }}",
+                            "value": "{{ game.data.PlayerData.tokens[game.turn.orderPosition] }}",
                             "type": "number",
                             "style": {
                               "width": "4vh",
                               "textAlign": "center"
                             }
                           },
-                          "onChange": "game.data.Controls.tokens = +value; chatLog('has updated their tokens to ' + value)"
+                          "onChange": "game.data.PlayerData.tokens[game.turn.orderPosition] = +value; chatLog('has updated their tokens to ' + value)"
                         }
                       ]
                     },
@@ -496,7 +480,7 @@
                               }
                             }
                           ],
-                          "onClick": "let TPI = game.data.Scoreboard.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.Scoreboard.players[TPI % game.turn.totalPlayers].passed){ game.data.Scoreboard.turnPlayerIndex = TPI; break; } TPI++; }; chatLog('has ended their action.')"
+                          "onClick": "let TPI = game.data.PlayerData.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.PlayerData.passed[TPI % game.turn.totalPlayers]){ game.data.PlayerData.turnPlayerIndex = TPI % game.turn.totalPlayers; break; } TPI++; }; chatLog('has ended their action.')"
                         },
                         {
                           "type": "button",
@@ -526,24 +510,13 @@
                               }
                             }
                           ],
-                          "onClick": "game.data.Controls.passed = true; let TPI = game.data.Scoreboard.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.Scoreboard.players[TPI % game.turn.totalPlayers].passed){ game.data.Scoreboard.turnPlayerIndex = TPI; break; } TPI++; }; chatLog('has passed.')"
+                          "onClick": "game.data.PlayerData.passed[game.turn.orderPosition] = true; let TPI = game.data.PlayerData.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.PlayerData.passed[TPI % game.turn.totalPlayers]){ game.data.PlayerData.turnPlayerIndex = TPI % game.turn.totalPlayers; break; } TPI++; }; chatLog('has passed.')"
                         }
                       ]
                     }
                   ]
                 }
               ]
-            },
-            "defaultValue": {
-              "health": 0,
-              "tokens": 0,
-              "passed": false
-            },
-            "events": {
-              "onStart": "console.log('Controls: onStart', game, delta, self); console.log(game);",
-              "onUpdate": "console.log('Scoreboard: onUpdate', game, delta, self); const gc = game.data.Controls; game.data.Scoreboard.players[game.turn.orderPosition].health = +gc.health; game.data.Scoreboard.players[game.turn.orderPosition].tokens = +gc.tokens; game.data.Scoreboard.players[game.turn.orderPosition].passed = !!gc.passed; console.log(game);",
-              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate', game, opponentGame, delta, self); const ogc = opponentGame.data.Controls; game.data.Scoreboard.players[opponentGame.turn.orderPosition].health = +ogc.health; game.data.Scoreboard.players[opponentGame.turn.orderPosition].tokens = +ogc.tokens; game.data.Scoreboard.players[opponentGame.turn.orderPosition].passed = !!ogc.passed;",
-              "onNewTurn": "console.log('Controls: onNewTurn', game, delta, self); console.log(game);"
             }
           }
         }
