@@ -180,25 +180,25 @@
             "defaultValue": {
               "players": [
                 {
-                  "health": 0,
+                  "health": 16,
                   "tokens": 0,
                   "passed": false,
                   "index": 0
                 },
                 {
-                  "health": 0,
+                  "health": 16,
                   "tokens": 0,
                   "passed": false,
                   "index": 1
                 },
                 {
-                  "health": 0,
+                  "health": 16,
                   "tokens": 0,
                   "passed": false,
                   "index": 2
                 },
                 {
-                  "health": 0,
+                  "health": 16,
                   "tokens": 0,
                   "passed": false,
                   "index": 3
@@ -423,7 +423,7 @@
                         "visibility": "{{ game.data.TurnData.turnPlayerIndex == game.turn.orderPosition && game.turn.count > 0 ? 'visible' : 'hidden' }}"
                       },
                       "children": [
-                        "Your Turn!"
+                        "Your Turn! {{ game.data.TurnData.turnPlayerIndex }}-{{ game.turn.orderPosition }}"
                       ]
                     },
                     {
