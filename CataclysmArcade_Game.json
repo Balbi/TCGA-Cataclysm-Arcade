@@ -161,7 +161,7 @@
           },
           "Scoreboard": {
             "type": "custom",
-            "playerRenderOnly": true,
+            "isShared": true,
             "blueprint": {
               "type": "div",
               "props": {
