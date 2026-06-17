@@ -327,10 +327,10 @@
               ]
             },
             "events": {
-              "onStart": "console.log('Scoreboard: onStart'); console.log(game);",
-              "onUpdate": "console.log('Scoreboard: onUpdate'); console.log(game);",
-              "onNewTurn": "console.log('Scoreboard: onNewTurn'); game.data.Scoreboard.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.Controls.tokens = game.data.Scoreboard.level; game.data.Controls.passed = false; const gs = game.data.Scoreboard; for(const player of gs.players){ player.tokens = gs.level; player.passed = false; }; console.log(game);",
-              "onOpponentUpdate": "console.log('Scoreboard: onOpponentUpdate'); const gs = game.data.Scoreboard; const ogs = opponentGame.data.Scoreboard; if( ogs.turnPlayerIndex > gs.turnPlayerIndex){ gs.turnPlayerIndex = ogs.turnPlayerIndex; }; console.log(game, opponentGame);"
+              "onStart": "console.log('Scoreboard: onStart', game, delta, self);",
+              "onUpdate": "console.log('Scoreboard: onUpdate', game, delta, self);",
+              "onNewTurn": "console.log('Scoreboard: onNewTurn', game, delta, self); game.data.Scoreboard.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.Controls.tokens = game.data.Scoreboard.level; game.data.Controls.passed = false; const gs = game.data.Scoreboard; for(const player of gs.players){ player.tokens = gs.level; player.passed = false; }; console.log(game);",
+              "onOpponentUpdate": "console.log('Scoreboard: onOpponentUpdate', game, opponentGame, delta, self); const gs = game.data.Scoreboard; const ogs = opponentGame.data.Scoreboard; if( ogs.turnPlayerIndex > gs.turnPlayerIndex){ gs.turnPlayerIndex = ogs.turnPlayerIndex; }; console.log(game, opponentGame);"
             }
           },
           "Controls": {
@@ -500,10 +500,10 @@
               "passed": false
             },
             "events": {
-              "onStart": "console.log('Controls: onStart', game); console.log(game);",
-              "onUpdate": "console.log('Scoreboard: onUpdate'); const gc = game.data.Controls; game.data.Scoreboard.players[game.turn.orderPosition].health = +gc.health; game.data.Scoreboard.players[game.turn.orderPosition].tokens = +gc.tokens; game.data.Scoreboard.players[game.turn.orderPosition].passed = !!gc.passed; console.log(game);",
-              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate', game, opponentGame); const ogc = opponentGame.data.Controls; game.data.Scoreboard.players[opponentGame.turn.orderPosition].health = +ogc.health; game.data.Scoreboard.players[opponentGame.turn.orderPosition].tokens = +ogc.tokens; game.data.Scoreboard.players[opponentGame.turn.orderPosition].passed = !!ogc.passed;",
-              "onNewTurn": "console.log('Controls: onNewTurn', game); console.log(game);"
+              "onStart": "console.log('Controls: onStart', game, delta, self); console.log(game);",
+              "onUpdate": "console.log('Scoreboard: onUpdate', game, delta, self); const gc = game.data.Controls; game.data.Scoreboard.players[game.turn.orderPosition].health = +gc.health; game.data.Scoreboard.players[game.turn.orderPosition].tokens = +gc.tokens; game.data.Scoreboard.players[game.turn.orderPosition].passed = !!gc.passed; console.log(game);",
+              "onOpponentUpdate": "console.log('Controls: onOpponentUpdate', game, opponentGame, delta, self); const ogc = opponentGame.data.Controls; game.data.Scoreboard.players[opponentGame.turn.orderPosition].health = +ogc.health; game.data.Scoreboard.players[opponentGame.turn.orderPosition].tokens = +ogc.tokens; game.data.Scoreboard.players[opponentGame.turn.orderPosition].passed = !!ogc.passed;",
+              "onNewTurn": "console.log('Controls: onNewTurn', game, delta, self); console.log(game);"
             }
           }
         }
