@@ -213,10 +213,48 @@
                           "className": "d-flex flex-row justify-content-around",
                           "style": {
                             "height": "3vh",
-                            "width": "7vh"
+                            "width": "12vh"
                           }
                         },
                         "children": [
+                          {
+                            "type": "div",
+                            "props": {
+                              "style": {
+                                "position": "relative",
+                                "height": "100%",
+                                "width": "3vh"
+                              }
+                            },
+                            "children": [
+                              {
+                                "type": "img",
+                                "props": {
+                                  "style": {
+                                    "height": "100%"
+                                  },
+                                  "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/health_{{ item.health < 0 || item.health > 25 ? 'blank' : Math.max(item.health, 0) }}.png"
+                                }
+                              },
+                              {
+                                "type": "div",
+                                "props": {
+                                  "style": {
+                                    "position": "absolute",
+                                    "height": "100%",
+                                    "color": "white",
+                                    "font-weight": "bold",
+                                    "display": "flex",
+                                    "align-items": "center",
+                                    "justify-content": "center"
+                                  }
+                                },
+                                "children": [
+                                "{{ item.health < 0 || item.health > 25 ? Math.max(item.health, 0) : '' }}"
+                                ]
+                              }
+                            ]
+                          },
                           {
                             "type": "img",
                             "props": {
@@ -318,7 +356,7 @@
                     {
                       "type": "div",
                       "props": {
-                        "className": "d-flex flex-row justify-content-around"
+                        "className": "d-flex flex-row justify-content-center"
                       },
                       "children": [
                         {
@@ -333,6 +371,7 @@
                             "value": "{{ game.data.Controls.health }}",
                             "type": "number",
                             "style": {
+                              "width": "4vh",
                               "textAlign": "center"
                             }
                           },
@@ -343,7 +382,7 @@
                     {
                       "type": "div",
                       "props": {
-                        "className": "d-flex flex-row justify-content-around"
+                        "className": "d-flex flex-row justify-content-center"
                       },
                       "children": [
                         {
@@ -358,6 +397,7 @@
                             "value": "{{ game.data.Controls.tokens }}",
                             "type": "number",
                             "style": {
+                              "width": "4vh",
                               "textAlign": "center"
                             }
                           },
@@ -374,18 +414,62 @@
                         {
                           "type": "button",
                           "props": {
-                            "className": "{{ game.data.Controls.passed ? 'disabled ' : '' }}"
+                            "className": "{{ game.data.Controls.passed ? 'disabled ' : '' }}",
+                            "style": {
+                              "width": "5vh",
+                              "height": "5vh",
+                              "background": "none",
+                              "border": "none",
+                              "padding": "0",
+                              "cursor": "pointer",
+                              "outline": "none"
+                            }
                           },
-                          "children": "Pass",
-                          "onClick": "game.data.Controls.passed = true; let TPI = game.data.Scoreboard.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.Scoreboard.players[TPI % game.turn.totalPlayers].passed){ game.data.Scoreboard.turnPlayerIndex = TPI; break; } TPI++; }; chatLog('has passed.')"
+                          "children": [
+                            {
+                              "type": "img",
+                              "props": {
+                                "style": {
+                                  "width": "100%",
+                                  "height": "auto",
+                                  "display": "block"
+                                },
+                                "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/next.png",
+                                "alt": "Next"
+                              }
+                            }
+                          ],
+                          "onClick": "let TPI = game.data.Scoreboard.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.Scoreboard.players[TPI % game.turn.totalPlayers].passed){ game.data.Scoreboard.turnPlayerIndex = TPI; break; } TPI++; }; chatLog('has ended their action.')"
                         },
                         {
                           "type": "button",
                           "props": {
-                            "className": "{{ game.data.Controls.passed ? 'disabled ' : '' }}"
+                            "className": "{{ game.data.Controls.passed ? 'disabled ' : '' }}",
+                            "style": {
+                              "width": "5vh",
+                              "height": "5vh",
+                              "background": "none",
+                              "border": "none",
+                              "padding": "0",
+                              "cursor": "pointer",
+                              "outline": "none"
+                            }
                           },
-                          "children": "Next",
-                          "onClick": "let TPI = game.data.Scoreboard.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.Scoreboard.players[TPI % game.turn.totalPlayers].passed){ game.data.Scoreboard.turnPlayerIndex = TPI; break; } TPI++; }; chatLog('has ended their action.')"
+                          "children": [
+                            {
+                              "type": "img",
+                              "props": {
+                                "style": {
+                                  "width": "100%",
+                                  "height": "auto",
+                                  "display": "block"
+                                },
+                                "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/pass.png",
+                                "alt": "Pass"
+                              }
+                            }
+                          ],
+                          "onClick": "game.data.Controls.passed = true; let TPI = game.data.Scoreboard.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.Scoreboard.players[TPI % game.turn.totalPlayers].passed){ game.data.Scoreboard.turnPlayerIndex = TPI; break; } TPI++; }; chatLog('has passed.')"
                         }
                       ]
                     }
@@ -400,7 +484,7 @@
             },
             "events": {
               "onStart": "console.log('Controls: onStart', game); console.log(game);",
-              "onUpdate":"console.log('Scoreboard: onUpdate'); const gc = game.data.Controls; const gs = game.data.Scoreboard.players[game.turn.orderPosition]; gs.health = gc.health; gs.tokens = gc.tokens; gs.passed = gc.passed; console.log(game);",
+              "onUpdate": "console.log('Scoreboard: onUpdate'); const gc = game.data.Controls; const gs = game.data.Scoreboard.players[game.turn.orderPosition]; gs.health = gc.health; gs.tokens = gc.tokens; gs.passed = gc.passed; console.log(game);",
               "onOpponentUpdate": "console.log('Controls: onOpponentUpdate', game, opponentGame); const ogc = opponentGame.data.Controls; const ogs = game.data.Scoreboard.players[opponentGame.turn.orderPosition]; ogs.health = ogc.health; ogs.tokens = ogc.tokens; ogs.passed = ogc.passed;",
               "onNewTurn": "console.log('Controls: onNewTurn', game); console.log(game);"
             }
