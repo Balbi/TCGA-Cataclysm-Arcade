@@ -261,6 +261,12 @@
                     "children": [
                       {
                         "type": "div",
+                        "props": {
+                          "style": {
+                            "font-weight": "bold",
+                            "text-shadow":"-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
+                          }
+                        },
                         "children": "{{ game.turn.orderPosition == item.index ? 'You' : 'Player ' + (item.index + 1)}}"
                       },
                       {
