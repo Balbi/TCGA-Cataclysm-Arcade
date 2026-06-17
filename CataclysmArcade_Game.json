@@ -102,9 +102,6 @@
               "section": "Scoreboard"
             },
             {
-              "section": "Controls"
-            },
-            {
               "direction": "row",
               "isSymetricalForOpponents": false,
               "style": {
@@ -117,6 +114,9 @@
                   "style": {
                     "width": "11vh"
                   }
+                },
+                {
+                  "section": "Controls"
                 }
               ]
             },
