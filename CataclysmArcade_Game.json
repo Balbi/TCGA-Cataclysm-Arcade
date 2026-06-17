@@ -197,7 +197,7 @@
               ]
             },
             "events": {
-              "onNewTurn": "console.log('PlayerData: onNewTurn', game); game.data.PlayerData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.PlayerData.roundPlayerIndex = (game.data.PlayerData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.PlayerData.turnPlayerIndex = game.turn.currentPlayerIndex; for(player of game.data.PlayerData.players){ player.tokens = game.data.PlayerData.level; player.passed = false; }",
+              "onNewTurn": "console.log('PlayerData: onNewTurn', game); game.data.PlayerData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.PlayerData.roundPlayerIndex = (game.data.PlayerData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.PlayerData.turnPlayerIndex = game.turn.currentPlayerIndex; for(const player of game.data.PlayerData.players){ player.tokens = game.data.PlayerData.level; player.passed = false; }",
               "onOpponentUpdate": "console.log('PlayerData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self);"
             }
           },
