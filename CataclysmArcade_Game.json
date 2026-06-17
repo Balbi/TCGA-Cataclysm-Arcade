@@ -478,7 +478,7 @@
                         {
                           "type": "button",
                           "props": {
-                            "className": "{{ game.data.players[game.turn.orderPosition].passed ? 'disabled ' : '' }}",
+                            "className": "{{ game.data.PlayerData.players[game.turn.orderPosition].passed ? 'disabled ' : '' }}",
                             "style": {
                               "width": "5vh",
                               "height": "5vh",
