@@ -233,7 +233,7 @@
                                   "style": {
                                     "height": "100%"
                                   },
-                                  "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/health_{{ item.health < 0 || item.health > 25 ? 'blank' : Math.max(item.health, 0) }}.png"
+                                  "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/health_blank.png"
                                 }
                               },
                               {
@@ -254,7 +254,12 @@
                                 "children": [
                                   {
                                     "type": "span",
-                                    "children": "{{ item.health < 0 || item.health > 25 ? Math.max(item.health, 0) : '' }}"
+                                    "props": {
+                                      "style": {
+                                        "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
+                                      }
+                                    },
+                                    "children": "{{ Math.max(item.health, 0) }}"
                                   }
                                 ]
                               }
@@ -334,7 +339,7 @@
                 {
                   "type": "div",
                   "props": {
-                    "className": "flex-column justify-content-center position-fixed end-0 top-50",
+                    "className": "flex-column justify-content-right position-fixed top-50",
                     "style": {
                       "--scoreboard-width": "6vh",
                       "--scoreboard-font-weight": "700",
@@ -342,18 +347,19 @@
                       "--scoreboard-opacity": "0.3",
                       "--scoreboard-padding": "0.7vh 0",
                       "--input-color-empty": "transparent",
-                      "width": "31.5vh",
-                      "height": "23.5vh",
+                      "width": "16vh",
+                      "height": "20vh",
+                      "right": "31.5vh",
                       "backdropFilter": "blur(20px)",
-                      "padding": "0.5vh",
+                      "padding": "1.5vh",
                       "backgroundColor": "#202020c9",
                       "borderRadius": "0.5vh",
-                      "display": "{{ (game.data.Scoreboard.turnPlayerIndex % game.turn.totalPlayers) == game.turn.orderPosition ? 'flex' : 'none' }}"
+                      "display": "{{ (game.data.Scoreboard.turnPlayerIndex % game.turn.totalPlayers) == game.turn.orderPosition && game.turn.count > 0 ? 'flex' : 'none' }}"
                     }
                   },
                   "children": [
                     {
-                      "type": "h2",
+                      "type": "h4",
                       "children": [
                         "Your Turn!"
                       ]
@@ -365,7 +371,7 @@
                       },
                       "children": [
                         {
-                          "type": "h3",
+                          "type": "h4",
                           "children": [
                             "Health"
                           ]
@@ -391,7 +397,7 @@
                       },
                       "children": [
                         {
-                          "type": "h3",
+                          "type": "h4",
                           "children": [
                             "Tokens"
                           ]
