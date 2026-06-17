@@ -478,7 +478,7 @@
                         {
                           "type": "button",
                           "props": {
-                            "className": "{{ game.data.PlayerData.players[game.turn.orderPosition].passed ? 'disabled ' : '' }}",
+                            "className": "{{ (game.data.PlayerData.players.filter(p => p.index != game.turn.orderPosition).every(player => player.passed)) || game.data.PlayerData.players[game.turn.orderPosition].passed ? 'disabled ' : '' }}",
                             "style": {
                               "width": "5vh",
                               "height": "5vh",
@@ -503,7 +503,7 @@
                               }
                             }
                           ],
-                          "onClick": "let TPI = game.data.PlayerData.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.PlayerData.players[TPI % game.turn.totalPlayers].passed){ game.data.PlayerData.turnPlayerIndex = TPI % game.turn.totalPlayers; break; } TPI++; }; chatLog('has ended their action.')"
+                          "onClick": "if(!game.data.PlayerData.players.filter(p => p.index != game.turn.orderPosition).every(player => player.passed)){ for(let i = game.turn.orderPosition + 1; i < game.turn.orderPosition + 4; i++){ if(!game.data.PlayerData.players[i % game.turn.totalPlayers].passed){ game.data.PlayerData.turnPlayerIndex = i % game.turn.totalPlayers; break; } } }; chatLog('has ended their action.')"
                         },
                         {
                           "type": "button",
@@ -533,7 +533,7 @@
                               }
                             }
                           ],
-                          "onClick": "game.data.PlayerData.players[game.turn.orderPosition].passed = true; let TPI = game.data.PlayerData.turnPlayerIndex + 1; for(let i = 0; i < game.turn.totalPlayers; i++){ if(!game.data.PlayerData.players[TPI % game.turn.totalPlayers].passed){ game.data.PlayerData.turnPlayerIndex = TPI % game.turn.totalPlayers; break; } TPI++; }; chatLog('has passed.')"
+                          "onClick": "game.data.PlayerData.players[game.turn.orderPosition].passed = true; if(!game.data.PlayerData.players.filter(p => p.index != game.turn.orderPosition).every(player => player.passed)){ for(let i = game.turn.orderPosition + 1; i < game.turn.orderPosition + 4; i++){ if(!game.data.PlayerData.players[i % game.turn.totalPlayers].passed){ game.data.PlayerData.turnPlayerIndex = i % game.turn.totalPlayers; break; } } }; chatLog('has passed.')"
                         }
                       ]
                     }
