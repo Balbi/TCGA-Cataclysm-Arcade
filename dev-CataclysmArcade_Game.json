@@ -169,7 +169,9 @@
               "roundPlayerIndex": -1
             },
             "events": {
-              "onOpponentUpdate": "console.log('PlayerData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self); const ogt = opponentGame.data.TurnData; Object.assign(game.data.TurnData, { level: ogt.level, turnPlayerIndex: ogt.turnPlayerIndex, roundPlayerIndex: ogt.roundPlayerIndex });"
+              "onStart": "console.log('TurnData: onStart', game);if(game.turn.orderPosition == 0){ game.data.TurnData.roundPlayerIndex = Math.floor(Math.random() * game.turn.totalPlayers) - 1;  chatLog('Player ' + (game.data.TurnData.roundPlayerIndex + 1) + ' will go first.'); }",
+              "onNewTurn": "console.log('TurnData: onNewTurn', game); game.data.TurnData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.TurnData.roundPlayerIndex = (game.data.TurnData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.TurnData.turnPlayerIndex = game.data.TurnData.roundPlayerIndex; for(const player of game.data.PlayerData.players){ player.tokens = game.data.TurnData.level; player.passed = false; };",
+              "onOpponentUpdate": "console.log('TurnData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self); const ogt = opponentGame.data.TurnData; Object.assign(game.data.TurnData, { level: ogt.level, turnPlayerIndex: ogt.turnPlayerIndex, roundPlayerIndex: ogt.roundPlayerIndex });"
             }
           },
           "PlayerData": {
@@ -204,7 +206,6 @@
               ]
             },
             "events": {
-              "onNewTurn": "console.log('PlayerData: onNewTurn', game); game.data.TurnData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.TurnData.roundPlayerIndex = (game.turn.count - 1) % game.turn.totalPlayers; game.data.TurnData.turnPlayerIndex = game.data.TurnData.roundPlayerIndex; for(const player of game.data.PlayerData.players){ player.tokens = game.data.TurnData.level; player.passed = false; }",
               "onOpponentUpdate": "console.log('PlayerData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self); const ogp = opponentGame.data.PlayerData.players[opponentGame.turn.orderPosition]; Object.assign(game.data.PlayerData.players[ogp.index], { health: ogp.health, tokens: ogp.tokens, passed: ogp.passed });"
             }
           },
