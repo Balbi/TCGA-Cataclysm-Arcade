@@ -126,12 +126,6 @@
           "isSymetricalForOpponents": false,
           "content": [
             {
-              "section": "Scoreboard"
-            },
-            {
-              "section": "PlayerData"
-            },
-            {
               "direction": "row",
               "isSymetricalForOpponents": false,
               "style": {
@@ -139,6 +133,12 @@
                 "padding": "0 20vh"
               },
               "content": [
+                {
+                  "section": "Scoreboard"
+                },
+                {
+                  "section": "PlayerData"
+                },
                 {
                   "section": "Boss",
                   "style": {
