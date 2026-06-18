@@ -66,7 +66,7 @@
           "max": 1
         },
         "mulliganCycle": {
-          "info": "Set aside any number of cards in your initial hand, draw that many, then shuffle the set aside cards into your deck.",
+          "info": "Choose any number of cards to be redrawn. Your deck will automatically be shuffled when completed.",
           "steps": [
             "toBottom",
             "draw",
