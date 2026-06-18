@@ -100,12 +100,12 @@
           "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_attack_minus.png"
         },
         {
-          "id":"health_plus",
+          "id": "health_plus",
           "name": "+Health",
           "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_health_plus.png"
         },
         {
-          "id":"health_minus",
+          "id": "health_minus",
           "name": "-Health",
           "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_health_minus.png"
         },
@@ -126,29 +126,19 @@
           "isSymetricalForOpponents": false,
           "content": [
             {
-              "direction": "row",
-              "isSymetricalForOpponents": false,
+              "section": "Scoreboard"
+            },
+            {
+              "section": "Boss",
               "style": {
-                "justify-content": "center",
-                "padding": "0 20vh"
-              },
-              "content": [
-                {
-                  "section": "Scoreboard"
-                },
-                {
-                  "section": "PlayerData"
-                },
-                {
-                  "section": "Boss",
-                  "style": {
-                    "width": "16vh"
-                  }
-                },
-                {
-                  "section": "Controls"
-                }
-              ]
+                "width": "16vh"
+              }
+            },
+            {
+              "section": "PlayerData"
+            },
+            {
+              "section": "Controls"
             },
             {
               "section": "Battlefield"
@@ -284,7 +274,7 @@
                         "props": {
                           "style": {
                             "font-weight": "bold",
-                            "text-shadow":"-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
+                            "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
                           }
                         },
                         "children": "{{ game.turn.orderPosition == item.index ? 'You' : 'Player ' + (item.index + 1)}}"
