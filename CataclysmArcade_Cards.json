@@ -5407,7 +5407,7 @@
   },
   "EB1 T01": {
     "id": "EB1 T01",
-    "isToken": false,
+    "isToken": true,
     "face": {
       "front": {
         "name": "Bear Trap",
@@ -5441,7 +5441,7 @@
   },
   "EB1 T02": {
     "id": "EB1 T02",
-    "isToken": false,
+    "isToken": true,
     "face": {
       "front": {
         "name": "Head Rat",
@@ -5475,7 +5475,7 @@
   },
   "EB1 T03": {
     "id": "EB1 T03",
-    "isToken": false,
+    "isToken": true,
     "face": {
       "front": {
         "name": "Toolbox",
@@ -5509,7 +5509,7 @@
   },
   "EB1 T04": {
     "id": "EB1 T04",
-    "isToken": false,
+    "isToken": true,
     "face": {
       "front": {
         "name": "Whump!",
