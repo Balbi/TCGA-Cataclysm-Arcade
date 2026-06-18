@@ -100,12 +100,12 @@
           "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_attack_minus.png"
         },
         {
-          "id":"health_plus",
+          "id": "health_plus",
           "name": "+Health",
           "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_health_plus.png"
         },
         {
-          "id":"health_minus",
+          "id": "health_minus",
           "name": "-Health",
           "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_health_minus.png"
         },
@@ -125,15 +125,9 @@
           "direction": "column",
           "isSymetricalForOpponents": false,
           "style": {
-            "marginTop": "2vh"
+            "marginTop": "1vh"
           },
           "content": [
-            {
-              "section": "Scoreboard"
-            },
-            {
-              "section": "PlayerData"
-            },
             {
               "direction": "row",
               "isSymetricalForOpponents": false,
@@ -147,6 +141,12 @@
                   "style": {
                     "width": "16vh"
                   }
+                },
+                {
+                  "section": "Scoreboard"
+                },
+                {
+                  "section": "PlayerData"
                 },
                 {
                   "section": "Controls"
@@ -180,7 +180,7 @@
           },
           "Battlefield": {
             "isHidden": "no",
-            "height": "SMALL",
+            "height": "MEDIUM",
             "alignment": "CENTER",
             "opponentAlignment": false,
             "noAutoPayTo": true,
@@ -201,7 +201,7 @@
               "roundPlayerIndex": -1
             },
             "events": {
-              "onStart": "console.log('TurnData: onStart', game);if(game.turn.orderPosition == 0){ let firstTurnPlayer = Math.floor(Math.random() * game.turn.totalPlayers) - 1; game.data.TurnData.roundPlayerIndex = firstTurnPlayer; chatLog('Player ' + (firstTurnPlayer + 2) + ' will go first.'); }",
+              "onStart": "console.log('TurnData: onStart', game);if(game.turn.orderPosition == 0){ let firstTurnPlayer = Math.floor(Math.random() * game.turn.totalPlayers); game.data.TurnData.roundPlayerIndex = firstTurnPlayer - 1; chatLog('Player ' + (firstTurnPlayer + 1) + ' will go first.'); };",
               "onNewTurn": "console.log('TurnData: onNewTurn', game); game.data.TurnData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.TurnData.roundPlayerIndex = (game.data.TurnData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.TurnData.turnPlayerIndex = game.data.TurnData.roundPlayerIndex; for(const player of game.data.PlayerData.players){ player.tokens = game.data.TurnData.level; player.passed = false; };",
               "onOpponentUpdate": "console.log('TurnData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self); const ogt = opponentGame.data.TurnData; Object.assign(game.data.TurnData, { level: ogt.level, turnPlayerIndex: ogt.turnPlayerIndex, roundPlayerIndex: ogt.roundPlayerIndex });"
             }
@@ -295,7 +295,7 @@
                         "props": {
                           "style": {
                             "font-weight": "bold",
-                            "text-shadow":"-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
+                            "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
                           }
                         },
                         "children": "{{ game.turn.orderPosition == item.index ? 'You' : 'Player ' + (item.index + 1)}}"
