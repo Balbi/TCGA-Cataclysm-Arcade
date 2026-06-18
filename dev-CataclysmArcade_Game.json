@@ -92,32 +92,32 @@
         {
           "id": "attack_plus",
           "name": "+Attack",
-          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/token_attack_plus.png"
+          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_attack_plus.png"
         },
         {
           "id": "attack_minus",
           "name": "-Attack",
-          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/token_attack_minus.png"
+          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_attack_minus.png"
         },
         {
           "id":"health_plus",
           "name": "+Health",
-          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/token_health_plus.png"
+          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_health_plus.png"
         },
         {
           "id":"health_minus",
           "name": "-Health",
-          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/token_health_minus.png"
+          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_health_minus.png"
         },
         {
           "id": "stun",
           "name": "Stun",
-          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/token_stun.png"
+          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_stun.png"
         },
         {
           "id": "marker",
           "name": "Marker",
-          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/token_blank.png"
+          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_blank.png"
         }
       ],
       "sections": {
