@@ -244,7 +244,7 @@
             "blueprint": {
               "type": "div",
               "props": {
-                "className": "flex-column align-items-center position-fixed start-50 top-50 translate-middle",
+                "className": "flex-column align-items-center position-fixed top-50",
                 "style": {
                   "width": "16vh",
                   "backdropFilter": "blur(20px)",
