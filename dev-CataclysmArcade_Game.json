@@ -124,9 +124,6 @@
         "layout": {
           "direction": "column",
           "isSymetricalForOpponents": false,
-          "style": {
-            "marginTop": "2vh"
-          },
           "content": [
             {
               "section": "Scoreboard"
@@ -145,7 +142,7 @@
                 {
                   "section": "Boss",
                   "style": {
-                    "width": "13vh"
+                    "width": "16vh"
                   }
                 },
                 {
@@ -166,7 +163,7 @@
         "sectionsDict": {
           "Boss": {
             "isHidden": "no",
-            "height": "SMALL",
+            "height": "MEDIUM",
             "alignment": "CENTER",
             "opponentAlignment": false,
             "noAutoPayTo": "true",
@@ -247,22 +244,13 @@
             "blueprint": {
               "type": "div",
               "props": {
-                "className": "flex-row justify-content-between position-fixed start-50 top-50 translate-middle",
+                "className": "flex-column align-items-center position-fixed start-50 top-50 translate-middle",
                 "style": {
-                  "--scoreboard-width": "7vh",
-                  "--scoreboard-font-weight": "900",
-                  "--scoreboard-font-size": "1.7vh",
-                  "--scoreboard-blue": "#64bfe3",
-                  "--scoreboard-red": "#d83938",
-                  "--scoreboard-opacity": "0.3",
-                  "--scoreboard-padding": "0.7vh 0",
-                  "--input-color-empty": "transparent",
-                  "height": "7vh",
+                  "width": "16vh",
                   "backdropFilter": "blur(20px)",
                   "padding": "0.5vh",
                   "backgroundColor": "#202020c9",
                   "borderRadius": "0.5vh",
-                  "marginLeft": "var(--left-offset-centered)",
                   "display": "{{ game.turn.count > 0 ? 'flex' : 'none' }}"
                 }
               },
@@ -271,7 +259,8 @@
                   "type": "img",
                   "props": {
                     "style": {
-                      "height": "100%"
+                      "height": "6vh",
+                      "width": "6vh"
                     },
                     "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/level_{{ Math.max(game.data.TurnData.level, 1) }}.png"
                   }
@@ -286,7 +275,7 @@
                       "style": {
                         "height": "100%",
                         "padding": "0 1vh",
-                        "display": "{{ item.index < game.turn.totalPlayers ? 'flex' : 'none' }}"
+                        "display": "{{ game.turn.orderPosition == item.index || item.index < game.turn.totalPlayers ? 'flex' : 'none' }}"
                       }
                     },
                     "children": [
