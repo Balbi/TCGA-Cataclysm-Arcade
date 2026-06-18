@@ -1389,6 +1389,9 @@
     "Set": [
       "EB1 - Early Bird"
     ],
+    "tokens": [
+      "EBT 102"
+    ],
     "_legal": [
       "Standard"
     ]
@@ -4687,6 +4690,9 @@
     "Set": [
       "EB1 - Early Bird"
     ],
+    "tokens": [
+      "EB1 T04"
+    ],
     "_legal": [
       "Standard"
     ]
@@ -4823,6 +4829,9 @@
     "Set": [
       "EB1 - Early Bird"
     ],
+    "tokens": [
+      "EB1 T03"
+    ],
     "_legal": [
       "Standard"
     ]
@@ -4924,6 +4933,9 @@
     "Rarity": "Common",
     "Set": [
       "EB1 - Early Bird"
+    ],
+    "tokens": [
+      "EB1 T01"
     ],
     "_legal": [
       "Standard"
