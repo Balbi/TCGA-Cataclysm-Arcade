@@ -244,14 +244,17 @@
                 "style": {
                   "--player-height": "4vh",
                   "--player-font-size": "1vh",
+                  "--player-stat-font-size": "1.5vh",
                   "--player-icon-size": "2vh",
                   "--player-border-color": "orange",
-                  "--player-margin-top": "0.5vh",
+                  "--player-gap": "0.75vh",
                   "width": "16vh",
                   "backdropFilter": "blur(20px)",
                   "padding": "0.5vh",
                   "backgroundColor": "#202020c9",
                   "borderRadius": "0.5vh",
+                  "font-weight": "900",
+                  "margin-top": "-1.5vh",
                   "display": "{{ game.turn.count > 0 ? 'flex' : 'none' }}"
                 }
               },
@@ -279,8 +282,8 @@
                       "style": {
                         "height": "var(--player-height)",
                         "width": "100%",
-                        "padding": "0 1vh",
-                        "margin-top": "var(--player-margin-top)",
+                        "padding": "0 2vh",
+                        "margin-bottom": "var(--player-gap)",
                         "display": "{{ game.turn.orderPosition == item.index || item.index < game.turn.totalPlayers ? 'flex' : 'none' }}"
                       }
                     },
@@ -329,9 +332,7 @@
                                 "type": "div",
                                 "props": {
                                   "style": {
-                                    "position": "absolute",
-                                    "height": "100%",
-                                    "color": "white"
+                                    "position": "absolute"
                                   }
                                 },
                                 "children": [
@@ -339,8 +340,7 @@
                                     "type": "span",
                                     "props": {
                                       "style": {
-                                        "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000",
-                                        "font-size": "2.25vh"
+                                        "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
                                       }
                                     },
                                     "children": "{{ Math.max(game.data.PlayerData.players[item.index].health, 0) }}"
@@ -354,7 +354,8 @@
                             "props": {
                               "style": {
                                 "position": "relative",
-                                "height": "100%"
+                                "height": "100%",
+                                "margin": "0 var(--player-gap)"
                               }
                             },
                             "children": [
@@ -388,8 +389,7 @@
                                     "type": "span",
                                     "props": {
                                       "style": {
-                                        "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000",
-                                        "font-size": "2.25vh"
+                                        "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
                                       }
                                     },
                                     "children": "{{ Math.max(game.data.PlayerData.players[item.index].tokens, 0) }}"
