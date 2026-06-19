@@ -239,7 +239,7 @@
             "blueprint": {
               "type": "div",
               "props": {
-                "className": "flex-column align-items-center position-fixed top-50",
+                "className": "flex-column align-items-center",
                 "style": {
                   "width": "16vh",
                   "backdropFilter": "blur(20px)",
@@ -424,7 +424,7 @@
                 {
                   "type": "div",
                   "props": {
-                    "className": "flex-column justify-content-right position-fixed top-50",
+                    "className": "flex-column justify-content-right",
                     "style": {
                       "--scoreboard-width": "6vh",
                       "--scoreboard-font-weight": "700",
