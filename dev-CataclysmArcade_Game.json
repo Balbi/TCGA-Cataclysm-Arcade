@@ -128,7 +128,7 @@
             {
               "direction": "row",
               "style": {
-                "justify-content": "space-between"
+                "justify-content": "space-around"
               },
               "content": [
                 {
@@ -204,25 +204,25 @@
             "defaultValue": {
               "players": [
                 {
-                  "health": 16,
+                  "health": 0,
                   "tokens": 0,
                   "passed": false,
                   "index": 0
                 },
                 {
-                  "health": 16,
+                  "health": 0,
                   "tokens": 0,
                   "passed": false,
                   "index": 1
                 },
                 {
-                  "health": 16,
+                  "health": 0,
                   "tokens": 0,
                   "passed": false,
                   "index": 2
                 },
                 {
-                  "health": 16,
+                  "health": 0,
                   "tokens": 0,
                   "passed": false,
                   "index": 3
@@ -241,6 +241,11 @@
               "props": {
                 "className": "flex-column align-items-center",
                 "style": {
+                  "--player-height": "4vh",
+                  "--player-font-size": "1vh",
+                  "--player-icon-size": "2vh",
+                  "--player-border-color": "orange",
+                  "--player-margin-top": "0.5vh",
                   "width": "16vh",
                   "backdropFilter": "blur(20px)",
                   "padding": "0.5vh",
@@ -254,8 +259,8 @@
                   "type": "img",
                   "props": {
                     "style": {
-                      "height": "6vh",
-                      "width": "6vh"
+                      "height": "5vh",
+                      "width": "5vh"
                     },
                     "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/level_{{ Math.max(game.data.TurnData.level, 1) }}.png"
                   }
@@ -266,10 +271,12 @@
                   "template": {
                     "type": "div",
                     "props": {
-                      "className": "flex-column justify-content-between",
+                      "className": "flex-column",
                       "style": {
-                        "height": "100%",
+                        "height": "var(--player-height)",
+                        "width": "100%",
                         "padding": "0 1vh",
+                        "margin-top": "var(--player-margin-top)",
                         "display": "{{ game.turn.orderPosition == item.index || item.index < game.turn.totalPlayers ? 'flex' : 'none' }}"
                       }
                     },
@@ -282,15 +289,14 @@
                             "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
                           }
                         },
-                        "children": "{{ game.turn.orderPosition == item.index ? 'You' : 'Player ' + (item.index + 1)}}"
+                        "children": "{{ game.turn.orderPosition == item.index ? 'You' : 'PLAYER ' + (item.index + 1)}}"
                       },
                       {
                         "type": "div",
                         "props": {
                           "className": "d-flex flex-row justify-content-around",
                           "style": {
-                            "height": "3vh",
-                            "width": "12vh"
+                            "width": "100%"
                           }
                         },
                         "children": [
@@ -299,8 +305,7 @@
                             "props": {
                               "style": {
                                 "position": "relative",
-                                "height": "100%",
-                                "width": "3vh"
+                                "height": "100%"
                               }
                             },
                             "children": [
@@ -308,7 +313,8 @@
                                 "type": "img",
                                 "props": {
                                   "style": {
-                                    "height": "100%"
+                                    "height": "var(--player-icon-size)",
+                                    "width": "auto"
                                   },
                                   "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/health_blank.png"
                                 }
@@ -317,7 +323,6 @@
                                 "type": "div",
                                 "props": {
                                   "style": {
-                                    "top": "0.075vh",
                                     "position": "absolute",
                                     "height": "100%",
                                     "width": "100%",
@@ -349,7 +354,7 @@
                               "style": {
                                 "position": "relative",
                                 "height": "100%",
-                                "width": "3vh"
+                                "width": "100%"
                               }
                             },
                             "children": [
@@ -357,7 +362,8 @@
                                 "type": "img",
                                 "props": {
                                   "style": {
-                                    "height": "100%"
+                                    "height": "var(--player-icon-size)",
+                                    "width": "auto"
                                   },
                                   "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_blank.png"
                                 }
@@ -396,7 +402,8 @@
                             "type": "img",
                             "props": {
                               "style": {
-                                "height": "100%"
+                                    "height": "var(--player-icon-size)",
+                                    "width": "auto"
                               },
                               "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ game.data.PlayerData.players[item.index].passed ? 'red' : 'green' }}.png"
                             }
@@ -426,12 +433,6 @@
                   "props": {
                     "className": "flex-column justify-content-right",
                     "style": {
-                      "--scoreboard-width": "6vh",
-                      "--scoreboard-font-weight": "700",
-                      "--scoreboard-font-size": "1.7vh",
-                      "--scoreboard-opacity": "0.3",
-                      "--scoreboard-padding": "0.7vh 0",
-                      "--input-color-empty": "transparent",
                       "width": "16vh",
                       "height": "20vh",
                       "right": "31.5vh",
