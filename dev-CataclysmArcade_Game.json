@@ -126,19 +126,24 @@
           "isSymetricalForOpponents": false,
           "content": [
             {
-              "section": "Scoreboard"
-            },
-            {
-              "section": "Boss",
+              "direction": "row",
               "style": {
-                "width": "16vh"
-              }
-            },
-            {
-              "section": "PlayerData"
-            },
-            {
-              "section": "Controls"
+                "justify-content": "space-between"
+              },
+              "content": [
+                {
+                  "section": "Scoreboard"
+                },
+                {
+                  "section": "Boss",
+                  "style": {
+                    "width": "16vh"
+                  }
+                },
+                {
+                  "section": "Controls"
+                }
+              ]
             },
             {
               "section": "Battlefield"
