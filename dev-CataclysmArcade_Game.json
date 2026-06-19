@@ -236,6 +236,7 @@
           },
           "Scoreboard": {
             "type": "custom",
+            "isShared": true,
             "blueprint": {
               "type": "div",
               "props": {
