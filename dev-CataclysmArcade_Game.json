@@ -333,7 +333,8 @@
                                 "props": {
                                   "style": {
                                     "position": "absolute",
-                                    "top": "0.125vh"
+                                    "top": "0.125vh",
+                                    "width": "100%"
                                   }
                                 },
                                 "children": [
@@ -356,7 +357,7 @@
                               "style": {
                                 "position": "relative",
                                 "height": "100%",
-                                "margin": "0 var(--player-gap)"
+                                "margin": "0 calc(var(--player-gap) * 2)"
                               }
                             },
                             "children": [
@@ -375,7 +376,8 @@
                                 "props": {
                                   "style": {
                                     "position": "absolute",
-                                    "top": "0.125vh"
+                                    "top": "0.125vh",
+                                    "width": "100%"
                                   }
                                 },
                                 "children": [
