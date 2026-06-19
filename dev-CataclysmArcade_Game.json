@@ -254,8 +254,7 @@
                   "backgroundColor": "#202020c9",
                   "borderRadius": "0.5vh",
                   "font-weight": "900",
-                  "margin-top": "-1.5vh",
-                  "display": "{{ game.turn.count > 0 ? 'flex' : 'none' }}"
+                  "margin-top": "-1.5vh"
                 }
               },
               "children": [
@@ -395,14 +394,26 @@
                             ]
                           },
                           {
-                            "type": "img",
+                            "type": "div",
                             "props": {
                               "style": {
-                                "height": "var(--player-icon-size)",
-                                "width": "auto"
-                              },
+                                "position": "relative",
+                                "height": "100%",
+                                "margin": "0 calc(var(--player-gap) * 2)"
+                              }
+                            },
+                            "children": [
+                              {
+                                "type": "img",
+                                "props": {
+                                  "style": {
+                                    "height": "var(--player-icon-size)",
+                                    "width": "auto"
+                                  },
                               "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ game.data.PlayerData.players[item.index].passed ? 'red' : 'green' }}.png"
-                            }
+                                }
+                              }
+                            ]
                           }
                         ]
                       }
