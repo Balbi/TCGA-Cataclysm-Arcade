@@ -236,7 +236,6 @@
           },
           "Scoreboard": {
             "type": "custom",
-            "playerRenderOnly": true,
             "blueprint": {
               "type": "div",
               "props": {
@@ -254,7 +253,8 @@
                   "backgroundColor": "#202020c9",
                   "borderRadius": "0.5vh",
                   "font-weight": "900",
-                  "margin-top": "-1.5vh"
+                  "margin-top": "-1.5vh",
+                  "display": "{{ game.isSpectator || game.turn.count > 0 ? 'flex' : 'none' }}"
                 }
               },
               "children": [
@@ -398,8 +398,7 @@
                             "props": {
                               "style": {
                                 "position": "relative",
-                                "height": "100%",
-                                "margin": "0 calc(var(--player-gap) * 2)"
+                                "height": "100%"
                               }
                             },
                             "children": [
