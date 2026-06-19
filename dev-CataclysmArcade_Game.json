@@ -128,7 +128,8 @@
             {
               "direction": "row",
               "style": {
-                "justify-content": "space-around"
+                "justify-content": "space-around",
+                "align-items": "center"
               },
               "content": [
                 {
@@ -259,8 +260,11 @@
                   "type": "img",
                   "props": {
                     "style": {
+                      "position": "absolute",
+                      "top": "-1.5vh",
+                      "left": "-1.5vh",
                       "height": "5vh",
-                      "width": "5vh"
+                      "width": "auto"
                     },
                     "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/level_{{ Math.max(game.data.TurnData.level, 1) }}.png"
                   }
@@ -295,7 +299,7 @@
                       {
                         "type": "div",
                         "props": {
-                          "className": "d-flex flex-row justify-content-around",
+                          "className": "d-flex flex-row justify-content-center",
                           "style": {
                             "width": "100%",
                             "height": "var(--player-icon-size)"
@@ -327,12 +331,7 @@
                                   "style": {
                                     "position": "absolute",
                                     "height": "100%",
-                                    "width": "100%",
-                                    "color": "white",
-                                    "font-weight": "bold",
-                                    "display": "flex",
-                                    "align-items": "center",
-                                    "justify-content": "center"
+                                    "color": "white"
                                   }
                                 },
                                 "children": [
@@ -355,8 +354,7 @@
                             "props": {
                               "style": {
                                 "position": "relative",
-                                "height": "100%",
-                                "width": "100%"
+                                "height": "100%"
                               }
                             },
                             "children": [
