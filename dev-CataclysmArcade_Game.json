@@ -285,6 +285,7 @@
                         "type": "div",
                         "props": {
                           "style": {
+                            "font-size": "var(--player-font-size)",
                             "font-weight": "bold",
                             "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
                           }
@@ -296,7 +297,8 @@
                         "props": {
                           "className": "d-flex flex-row justify-content-around",
                           "style": {
-                            "width": "100%"
+                            "width": "100%",
+                            "height": "var(--player-icon-size)"
                           }
                         },
                         "children": [
@@ -402,8 +404,8 @@
                             "type": "img",
                             "props": {
                               "style": {
-                                    "height": "var(--player-icon-size)",
-                                    "width": "auto"
+                                "height": "var(--player-icon-size)",
+                                "width": "auto"
                               },
                               "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ game.data.PlayerData.players[item.index].passed ? 'red' : 'green' }}.png"
                             }
