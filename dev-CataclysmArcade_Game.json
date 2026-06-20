@@ -253,7 +253,7 @@
                   "backgroundColor": "#202020c9",
                   "borderRadius": "0.5vh",
                   "font-weight": "900",
-                  "margin-top": "-1.5vh",
+                  "margin-top": "1vh",
                   "display": "{{ game.isSpectator || game.turn.count > 0 ? 'flex' : 'none' }}"
                 }
               },
@@ -263,7 +263,7 @@
                   "props": {
                     "style": {
                       "position": "absolute",
-                      "top": "-1.5vh",
+                      "top": "calc(50% - 2.5vh)",
                       "left": "-1.5vh",
                       "height": "5vh",
                       "width": "auto"
@@ -284,7 +284,7 @@
                         "height": "var(--player-height)",
                         "width": "100%",
                         "padding": "0 2vh",
-                        "margin-bottom": "var(--player-gap)",
+                        "margin-bottom": "{{ item.index < game.turn.totalPlayers - 1 ? 'var(--player-gap)' : '0' }}",
                         "display": "{{ game.turn.orderPosition == item.index || item.index < game.turn.totalPlayers ? 'flex' : 'none' }}"
                       }
                     },
@@ -447,7 +447,8 @@
                       "backdropFilter": "blur(20px)",
                       "padding": "1.5vh",
                       "backgroundColor": "#202020c9",
-                      "borderRadius": "0.5vh"
+                      "borderRadius": "0.5vh",
+                      "margin-top": "1vh"
                     }
                   },
                   "children": [
