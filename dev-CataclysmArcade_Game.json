@@ -306,7 +306,8 @@
                           "className": "d-flex flex-row justify-content-center",
                           "style": {
                             "width": "100%",
-                            "height": "var(--player-icon-size)"
+                            "height": "var(--player-icon-size)",
+                            "margin-top": "-0.5vh"
                           }
                         },
                         "children": [
