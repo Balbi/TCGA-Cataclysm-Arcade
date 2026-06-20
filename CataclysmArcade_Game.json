@@ -86,32 +86,58 @@
         "drawPerTurn": "1"
       },
       "tokens": [],
-      "countersStartingValues": [
-        0
-      ],
+      "countersStartingValues": [],
       "hideFacedDownCards": false,
+      "draggableTokens": [
+        {
+          "id": "attack_plus",
+          "name": "+Attack",
+          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_attack_plus.png"
+        },
+        {
+          "id": "attack_minus",
+          "name": "-Attack",
+          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_attack_minus.png"
+        },
+        {
+          "id": "health_plus",
+          "name": "+Health",
+          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_health_plus.png"
+        },
+        {
+          "id": "health_minus",
+          "name": "-Health",
+          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_health_minus.png"
+        },
+        {
+          "id": "stun",
+          "name": "Stun",
+          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/tokens/token_stun.png"
+        },
+        {
+          "id": "marker",
+          "name": "Marker",
+          "image": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_blank.png"
+        }
+      ],
       "sections": {
         "layout": {
           "direction": "column",
           "isSymetricalForOpponents": false,
           "style": {
-            "marginTop": "2vh"
+            "margin-top": "-2vh"
           },
           "content": [
             {
-              "section": "Scoreboard"
-            },
-            {
-              "section": "PlayerData"
-            },
-            {
               "direction": "row",
-              "isSymetricalForOpponents": false,
               "style": {
-                "justify-content": "center",
-                "padding": "0 20vh"
+                "justify-content": "space-around",
+                "align-items": "center"
               },
               "content": [
+                {
+                  "section": "Scoreboard"
+                },
                 {
                   "section": "Boss",
                   "style": {
@@ -150,7 +176,7 @@
           },
           "Battlefield": {
             "isHidden": "no",
-            "height": "SMALL",
+            "height": "MEDIUM",
             "alignment": "CENTER",
             "opponentAlignment": false,
             "noAutoPayTo": true,
@@ -171,7 +197,9 @@
               "roundPlayerIndex": -1
             },
             "events": {
-              "onOpponentUpdate": "console.log('PlayerData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self); const ogt = opponentGame.data.TurnData; Object.assign(game.data.TurnData, { level: ogt.level, turnPlayerIndex: ogt.turnPlayerIndex, roundPlayerIndex: ogt.roundPlayerIndex });"
+              "onStart": "if(game.turn.orderPosition == 0 && !game.turn.isSpectator) { let firstTurnPlayer = Math.floor(Math.random() * game.turn.totalPlayers); game.data.TurnData.roundPlayerIndex = firstTurnPlayer - 1; chatLog('Player ' + (firstTurnPlayer + 1) + ' will go first.'); };",
+              "onNewTurn": "if(game.turn.orderPosition == 0 && !game.turn.isSpectator) { game.data.TurnData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.TurnData.roundPlayerIndex = (game.data.TurnData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.TurnData.turnPlayerIndex = game.data.TurnData.roundPlayerIndex; for(const player of game.data.PlayerData.players){ player.tokens = game.data.TurnData.level; player.passed = false; }; }",
+              "onOpponentUpdate": "if(game.turn.orderPosition == 0 && !game.turn.isSpectator) { game.data.TurnData.turnPlayerIndex = opponentGame.data.TurnData.turnPlayerIndex; }"
             }
           },
           "PlayerData": {
@@ -180,25 +208,25 @@
             "defaultValue": {
               "players": [
                 {
-                  "health": 16,
+                  "health": 0,
                   "tokens": 0,
                   "passed": false,
                   "index": 0
                 },
                 {
-                  "health": 16,
+                  "health": 0,
                   "tokens": 0,
                   "passed": false,
                   "index": 1
                 },
                 {
-                  "health": 16,
+                  "health": 0,
                   "tokens": 0,
                   "passed": false,
                   "index": 2
                 },
                 {
-                  "health": 16,
+                  "health": 0,
                   "tokens": 0,
                   "passed": false,
                   "index": 3
@@ -206,33 +234,31 @@
               ]
             },
             "events": {
-              "onNewTurn": "console.log('PlayerData: onNewTurn', game); game.data.TurnData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.TurnData.roundPlayerIndex = (game.turn.count - 1) % game.turn.totalPlayers; game.data.TurnData.turnPlayerIndex = game.data.TurnData.roundPlayerIndex; for(const player of game.data.PlayerData.players){ player.tokens = game.data.TurnData.level; player.passed = false; }",
-              "onOpponentUpdate": "console.log('PlayerData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self); const ogp = opponentGame.data.PlayerData.players[opponentGame.turn.orderPosition]; Object.assign(game.data.PlayerData.players[ogp.index], { health: ogp.health, tokens: ogp.tokens, passed: ogp.passed });"
+              "onOpponentUpdate": "const g = opponentGame.data.PlayerData.players[opponentGame.turn.orderPosition]; const p = game.data.PlayerData.players[opponentGame.turn.orderPosition]; p.health = g.health; p.tokens = g.tokens; p.passed = g.passed;"
             }
           },
           "Scoreboard": {
             "type": "custom",
-            "playerRenderOnly": true,
+            "isShared": true,
             "blueprint": {
               "type": "div",
               "props": {
-                "className": "flex-row justify-content-between position-fixed start-50 top-50 translate-middle",
+                "className": "flex-column align-items-center",
                 "style": {
-                  "--scoreboard-width": "7vh",
-                  "--scoreboard-font-weight": "900",
-                  "--scoreboard-font-size": "1.7vh",
-                  "--scoreboard-blue": "#64bfe3",
-                  "--scoreboard-red": "#d83938",
-                  "--scoreboard-opacity": "0.3",
-                  "--scoreboard-padding": "0.7vh 0",
-                  "--input-color-empty": "transparent",
-                  "height": "7vh",
+                  "--player-height": "4vh",
+                  "--player-font-size": "1vh",
+                  "--player-stat-font-size": "1.5vh",
+                  "--player-icon-size": "2vh",
+                  "--player-border-color": "orange",
+                  "--player-gap": "0.75vh",
+                  "width": "16vh",
                   "backdropFilter": "blur(20px)",
                   "padding": "0.5vh",
                   "backgroundColor": "#202020c9",
                   "borderRadius": "0.5vh",
-                  "marginLeft": "var(--left-offset-centered)",
-                  "display": "{{ game.turn.count > 0 ? 'flex' : 'none' }}"
+                  "font-weight": "900",
+                  "margin-top": "1vh",
+                  "display": "{{ game.isSpectator || game.turn.count > 0 ? 'flex' : 'none' }}"
                 }
               },
               "children": [
@@ -240,7 +266,11 @@
                   "type": "img",
                   "props": {
                     "style": {
-                      "height": "100%"
+                      "position": "absolute",
+                      "top": "calc(50% - 2.5vh)",
+                      "left": "-1.5vh",
+                      "height": "5vh",
+                      "width": "auto"
                     },
                     "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/level_{{ Math.max(game.data.TurnData.level, 1) }}.png"
                   }
@@ -251,11 +281,15 @@
                   "template": {
                     "type": "div",
                     "props": {
-                      "className": "flex-column justify-content-between",
+                      "className": "flex-column",
                       "style": {
-                        "height": "100%",
-                        "padding": "0 1vh",
-                        "display": "{{ item.index < game.turn.totalPlayers ? 'flex' : 'none' }}"
+                        "border-top": "1px solid {{ item.index > 0 ? 'black' : 'transparent' }}",
+                        "border": "1px solid {{ game.data.TurnData.turnPlayerIndex == item.index ? 'var(--player-border-color)' : 'transparent' }}",
+                        "height": "var(--player-height)",
+                        "width": "100%",
+                        "padding": "0 2vh",
+                        "margin-bottom": "{{ item.index < game.turn.totalPlayers - 1 ? 'var(--player-gap)' : '0' }}",
+                        "display": "{{ game.turn.orderPosition == item.index || item.index < game.turn.totalPlayers ? 'flex' : 'none' }}"
                       }
                     },
                     "children": [
@@ -263,19 +297,21 @@
                         "type": "div",
                         "props": {
                           "style": {
+                            "font-size": "var(--player-font-size)",
                             "font-weight": "bold",
-                            "text-shadow":"-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
+                            "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
                           }
                         },
-                        "children": "{{ game.turn.orderPosition == item.index ? 'You' : 'Player ' + (item.index + 1)}}"
+                        "children": "{{ game.turn.orderPosition == item.index && !game.isSpectator ? 'You' : 'PLAYER ' + (item.index + 1)}}"
                       },
                       {
                         "type": "div",
                         "props": {
-                          "className": "d-flex flex-row justify-content-around",
+                          "className": "d-flex flex-row justify-content-center",
                           "style": {
-                            "height": "3vh",
-                            "width": "12vh"
+                            "width": "100%",
+                            "height": "var(--player-icon-size)",
+                            "margin-top": "-0.5vh"
                           }
                         },
                         "children": [
@@ -284,8 +320,7 @@
                             "props": {
                               "style": {
                                 "position": "relative",
-                                "height": "100%",
-                                "width": "3vh"
+                                "height": "100%"
                               }
                             },
                             "children": [
@@ -293,7 +328,8 @@
                                 "type": "img",
                                 "props": {
                                   "style": {
-                                    "height": "100%"
+                                    "height": "var(--player-icon-size)",
+                                    "width": "auto"
                                   },
                                   "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/health_blank.png"
                                 }
@@ -302,15 +338,9 @@
                                 "type": "div",
                                 "props": {
                                   "style": {
-                                    "top": "0.075vh",
                                     "position": "absolute",
-                                    "height": "100%",
-                                    "width": "100%",
-                                    "color": "white",
-                                    "font-weight": "bold",
-                                    "display": "flex",
-                                    "align-items": "center",
-                                    "justify-content": "center"
+                                    "top": "0.125vh",
+                                    "width": "100%"
                                   }
                                 },
                                 "children": [
@@ -318,8 +348,7 @@
                                     "type": "span",
                                     "props": {
                                       "style": {
-                                        "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000",
-                                        "font-size": "2.25vh"
+                                        "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
                                       }
                                     },
                                     "children": "{{ Math.max(game.data.PlayerData.players[item.index].health, 0) }}"
@@ -334,7 +363,7 @@
                               "style": {
                                 "position": "relative",
                                 "height": "100%",
-                                "width": "3vh"
+                                "margin": "0 calc(var(--player-gap) * 2)"
                               }
                             },
                             "children": [
@@ -342,7 +371,8 @@
                                 "type": "img",
                                 "props": {
                                   "style": {
-                                    "height": "100%"
+                                    "height": "var(--player-icon-size)",
+                                    "width": "auto"
                                   },
                                   "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/token_blank.png"
                                 }
@@ -351,15 +381,9 @@
                                 "type": "div",
                                 "props": {
                                   "style": {
-                                    "top": "0.075vh",
                                     "position": "absolute",
-                                    "height": "100%",
-                                    "width": "100%",
-                                    "color": "white",
-                                    "font-weight": "bold",
-                                    "display": "flex",
-                                    "align-items": "center",
-                                    "justify-content": "center"
+                                    "top": "0.125vh",
+                                    "width": "100%"
                                   }
                                 },
                                 "children": [
@@ -367,8 +391,7 @@
                                     "type": "span",
                                     "props": {
                                       "style": {
-                                        "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000",
-                                        "font-size": "2.25vh"
+                                        "text-shadow": "-1px -1px 0 #000, 1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000"
                                       }
                                     },
                                     "children": "{{ Math.max(game.data.PlayerData.players[item.index].tokens, 0) }}"
@@ -378,13 +401,25 @@
                             ]
                           },
                           {
-                            "type": "img",
+                            "type": "div",
                             "props": {
                               "style": {
+                                "position": "relative",
                                 "height": "100%"
-                              },
+                              }
+                            },
+                            "children": [
+                              {
+                                "type": "img",
+                                "props": {
+                                  "style": {
+                                    "height": "var(--player-icon-size)",
+                                    "width": "auto"
+                                  },
                               "src": "https://balbi.github.io/TCGA-Cataclysm-Arcade/images/scoreboard/{{ game.data.PlayerData.players[item.index].passed ? 'red' : 'green' }}.png"
-                            }
+                                }
+                              }
+                            ]
                           }
                         ]
                       }
@@ -409,21 +444,16 @@
                 {
                   "type": "div",
                   "props": {
-                    "className": "flex-column justify-content-right position-fixed top-50",
+                    "className": "flex-column justify-content-right",
                     "style": {
-                      "--scoreboard-width": "6vh",
-                      "--scoreboard-font-weight": "700",
-                      "--scoreboard-font-size": "1.7vh",
-                      "--scoreboard-opacity": "0.3",
-                      "--scoreboard-padding": "0.7vh 0",
-                      "--input-color-empty": "transparent",
                       "width": "16vh",
                       "height": "20vh",
                       "right": "31.5vh",
                       "backdropFilter": "blur(20px)",
                       "padding": "1.5vh",
                       "backgroundColor": "#202020c9",
-                      "borderRadius": "0.5vh"
+                      "borderRadius": "0.5vh",
+                      "margin-top": "1vh"
                     }
                   },
                   "children": [
@@ -499,7 +529,7 @@
                         {
                           "type": "button",
                           "props": {
-                            "className": "{{ (game.data.TurnData.turnPlayerIndex != game.turn.orderPosition) || (game.data.PlayerData.players.filter(p => p.index != game.turn.orderPosition).every(player => player.passed)) || game.data.PlayerData.players[game.turn.orderPosition].passed ? 'disabled ' : '' }}",
+                            "className": "{{ game.data.TurnData.turnPlayerIndex != game.turn.orderPosition ? 'disabled ' : '' }}",
                             "style": {
                               "width": "5vh",
                               "height": "5vh",
@@ -524,7 +554,7 @@
                               }
                             }
                           ],
-                          "onClick": "if(!game.data.PlayerData.players.filter(p => p.index != game.turn.orderPosition).every(player => player.passed)){ for(let i = game.turn.orderPosition + 1; i < game.turn.orderPosition + 4; i++){ if(!game.data.PlayerData.players[i % game.turn.totalPlayers].passed){ game.data.TurnData.turnPlayerIndex = i % game.turn.totalPlayers; break; } } }; chatLog('has ended their action.')"
+                          "onClick": "const startIndex = (game.turn.orderPosition + 1) % game.data.PlayerData.players.length; game.data.TurnData.turnPlayerIndex = [...game.data.PlayerData.players.slice(startIndex), ...game.data.PlayerData.players.slice(0, startIndex)].find(player => !player.passed && player.index < game.turn.totalPlayers)?.index ?? game.turn.orderPosition; chatLog('has ended their action.');"
                         },
                         {
                           "type": "button",
