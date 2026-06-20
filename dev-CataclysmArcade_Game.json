@@ -124,6 +124,9 @@
         "layout": {
           "direction": "column",
           "isSymetricalForOpponents": false,
+          "style": {
+            "margin-top": "-2vh"
+          },
           "content": [
             {
               "direction": "row",
@@ -194,8 +197,8 @@
               "roundPlayerIndex": -1
             },
             "events": {
-              "onStart": "console.log('TurnData: onStart', game);if(game.turn.orderPosition == 0){ let firstTurnPlayer = Math.floor(Math.random() * game.turn.totalPlayers); game.data.TurnData.roundPlayerIndex = firstTurnPlayer - 1; chatLog('Player ' + (firstTurnPlayer + 1) + ' will go first.'); };",
-              "onNewTurn": "console.log('TurnData: onNewTurn', game); game.data.TurnData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.TurnData.roundPlayerIndex = (game.data.TurnData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.TurnData.turnPlayerIndex = game.data.TurnData.roundPlayerIndex; for(const player of game.data.PlayerData.players){ player.tokens = game.data.TurnData.level; player.passed = false; };"
+              "onStart": "if(game.turn.orderPosition == 0 && !game.turn.isSpectator) { let firstTurnPlayer = Math.floor(Math.random() * game.turn.totalPlayers); game.data.TurnData.roundPlayerIndex = firstTurnPlayer - 1; chatLog('Player ' + (firstTurnPlayer + 1) + ' will go first.'); };",
+              "onNewTurn": "if(game.turn.orderPosition == 0 && !game.turn.isSpectator) { game.data.TurnData.level = Math.min(Math.max(game.turn.count, 1), 9); game.data.TurnData.roundPlayerIndex = (game.data.TurnData.roundPlayerIndex + 1) % game.turn.totalPlayers; game.data.TurnData.turnPlayerIndex = game.data.TurnData.roundPlayerIndex; for(const player of game.data.PlayerData.players){ player.tokens = game.data.TurnData.level; player.passed = false; }; }"
             }
           },
           "PlayerData": {
@@ -228,9 +231,6 @@
                   "index": 3
                 }
               ]
-            },
-            "events": {
-              "onOpponentUpdate": "console.log('PlayerData: onOpponentUpdate', 'game', game, 'opponentGame', opponentGame, 'delta', delta, 'self', self); const ogp = opponentGame.data.PlayerData.players[opponentGame.turn.orderPosition]; Object.assign(game.data.PlayerData.players[ogp.index], { health: ogp.health, tokens: ogp.tokens, passed: ogp.passed });"
             }
           },
           "Scoreboard": {
@@ -279,6 +279,8 @@
                     "props": {
                       "className": "flex-column",
                       "style": {
+                        "border-top": "1px solid {{ item.index > 0 ? 'black' : 'transparent' }}",
+                        "border": "1px solid {{ game.data.TurnData.turnPlayerIndex == item.index ? 'var(--player-border-color)' : 'transparent' }}",
                         "height": "var(--player-height)",
                         "width": "100%",
                         "padding": "0 2vh",
