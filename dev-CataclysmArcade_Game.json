@@ -526,7 +526,7 @@
                         {
                           "type": "button",
                           "props": {
-                            "className": "{{ (game.data.TurnData.turnPlayerIndex != game.turn.orderPosition) || (game.data.PlayerData.players.reduce((acc, player) => acc || (!player.passed && player.index < game.turn.totalPlayers && player.index != game.turn.orderPosition), false)) || game.data.PlayerData.players[game.turn.orderPosition].passed ? 'disabled ' : '' }}",
+                            "className": "{{ game.data.TurnData.turnPlayerIndex != game.turn.orderPosition ? 'disabled ' : '' }}",
                             "style": {
                               "width": "5vh",
                               "height": "5vh",
