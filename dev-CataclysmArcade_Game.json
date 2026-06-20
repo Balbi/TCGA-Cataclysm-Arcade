@@ -232,6 +232,9 @@
                   "index": 3
                 }
               ]
+            },
+            "events": {
+              "onOpponentUpdate": "const g = opponentGame.data.PlayerData.players[opponentGame.turn.orderPosition]; const p = game.data.PlayerData.players[opponentGame.turn.orderPosition]; p.health = g.health; p.tokens = g.tokens; p.passed = g.passed;"
             }
           },
           "Scoreboard": {
